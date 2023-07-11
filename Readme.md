@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Ульяна Гимаева](https://up.htmlacademy.ru/htmlcss-individual/1/user/2305285).
-* Наставник: `Неизвестно`.
+* Наставник: `Александр Лесухин (https://htmlacademy.ru/profile/caneklis)`.
 
 ---
 
