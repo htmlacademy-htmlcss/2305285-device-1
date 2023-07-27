@@ -45,7 +45,7 @@
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -55,7 +55,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
-        </ul>
+        </ol>
       </header>
 
       <section class="catalog-products">
@@ -63,6 +63,8 @@
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость</legend>
+            <input class="min" type="text" name="min">
+            <input class="max" type="text" name="min">
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
@@ -162,10 +164,8 @@
           </li>
         </ul>
         <button class="butten pagination-show-more" type="button">Загрузить еще</button>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
-          </li>
+        <a class="pagination-link pagination-prev pagination-disabled">Назад</a>
+        <ol class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -175,16 +175,10 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">3</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">15</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">Вперед</a>
-          </li>
-        </ul>
+        </ol>
+        <span class="pagination-item">...</span>
+        <a class="pagination-link" href="#">15</a>
+        <a class="pagination-link pagination-next" href="#">Вперед</a>
       </section>
     </main>
 
