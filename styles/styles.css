@@ -162,3 +162,27 @@ body {
   color: #000000;
   background-color: #ffffff;
 }
+
+.button-feedback {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.newslatter-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.newslatter-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
