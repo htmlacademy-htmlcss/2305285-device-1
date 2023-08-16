@@ -297,3 +297,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.catalog-container {
+  background-color: #FFE17F;
+  text-align: center;
+}
