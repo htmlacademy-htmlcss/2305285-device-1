@@ -25,10 +25,26 @@
 body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
+  font-weight: 400;
   line-height: 30px;
   color: #444444;
   background-color: #ffffff;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* HEADER */
 
 .page-header {
   color: #000000;
@@ -38,28 +54,46 @@ body {
 .navigation-list {
   font-family: "Raleway", sans-serif;
   line-height: 18px;
-  font-weight: 800;
   color: #000000;
   background-color: #FFE17F;
   text-decoration: none;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .catalog-sort-list {
   font-family: "Rubik", sans-serif;
-  line-height: 16px;
-  font-weight: 400;
+  font-size: 16px;
   line-height: 18px;
   color: #000000;
   background-color: #FFE17F;
   text-decoration: none;
   text-transform: none;
+  list-style: none;
 }
 
-.navigation-link, .furniture-link, .gadget-link, .quadrocopter-link {
+.navigation-user-item,
+.furniture-list,
+.gadget-list,
+.quadrocopter-list,
+.slider-pagination-item,
+.under-pagination-item,
+.catalog-item,
+.advantages-item,
+.breadcrumbs-item,
+.product-card,
+.pagination-item,
+.footer-navigation-item,
+.footer-social-item {
+  list-style: none;
+}
+
+.navigation-user-link, .navigation-link, .furniture-link, .gadget-link, .quadrocopter-link {
   color: #000000;
   text-decoration: none;
 }
+
+/* MAIN */
 
 .main-index {
   color: #000000;
@@ -70,7 +104,6 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  font-weight: 800;
 }
 
 .slider-pagination dd {
@@ -79,7 +112,6 @@ body {
 
 .catalog-button {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
   line-height: 24px;
   color: #000000;
   background-color: #ffffff;
@@ -88,7 +120,6 @@ body {
 
 .button {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
   font-size: 18px;
   text-align: center;
   color: #000000;
@@ -108,18 +139,19 @@ body {
 
 .delivery-service-button {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
   font-size: 20px;
   text-align: center;
   color: #000000;
   background-color: #F0F0F0;
   text-transform: uppercase;
+  width: 1160px;
+  height: 100px;
+  border: none;
 }
 
 .about h2 {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
-  font-weight: 800;
   line-height: 50px;
 }
 
@@ -131,7 +163,6 @@ body {
 .contacts-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
-  font-weight: 800;
   line-height: 50px;
 }
 
@@ -152,7 +183,6 @@ body {
 
 .button-feedback {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
   text-align: center;
   color: #000000;
   background-color: #ffffff;
@@ -167,20 +197,21 @@ body {
 .newslatter-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
-  font-weight: 800;
   line-height: 50px;
 }
 
 .newslatter-button {
   font-family: "Raleway", sans-serif;
-  font-weight: 800;
+  font-size: 18px;
   text-align: center;
   text-transform: uppercase;
 }
 
+/* FOOTER */
+
 .page-footer {
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
-  font-weight: 400;
   line-height: 20px;
   color: #FFFFFF;
   background-color: #444444;
@@ -188,8 +219,7 @@ body {
 
 .footer-navigation-link {
   font-family: "Raleway", sans-serif;
-  line-height: 18px;
-  font-weight: 800;
+  font-size: 18px;
   color: #FFFFFF;
   background-color: #444444;
   text-decoration: none;
@@ -200,6 +230,9 @@ body {
   color: #FFFFFF;
   background-color: #444444;
 }
+
+
+/* КАТАЛОГ */
 
 .inner-header-title {
   font-size: 50px;
@@ -227,12 +260,17 @@ body {
 }
 
 .catalog-products-title {
-  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 .catalog-filter-title {
   font-weight: 700;
+}
+
+.catalog-filter-group {
+  border: none;
 }
 
 .sorting-container {
@@ -263,7 +301,6 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   text-align: center;
-  font-weight: 800;
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
@@ -301,4 +338,6 @@ body {
 .catalog-container {
   background-color: #FFE17F;
   text-align: center;
+  width: 160px;
+  height: 160px;
 }
