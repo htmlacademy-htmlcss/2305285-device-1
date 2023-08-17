@@ -72,23 +72,36 @@ body {
   list-style: none;
 }
 
-.navigation-user-item,
+/* Список .navigation-user имеет отсупы внизу - почему? */
+
+.navigation-user,
+.navigation-list,
+.catalog-sort-list,
 .furniture-list,
 .gadget-list,
 .quadrocopter-list,
-.slider-pagination-item,
-.under-pagination-item,
-.catalog-item,
-.advantages-item,
-.breadcrumbs-item,
-.product-card,
-.pagination-item,
-.footer-navigation-item,
-.footer-social-item {
+.slider-pagination,
+.under-pagination-list,
+.catalog-list,
+.advantages-list,
+.contacts-schedule,
+.delivery-list,
+.footer-navigation-list,
+.footer-social-list,
+.breadcrumbs,
+.catalog-filter-list,
+.product-list,
+.pagination {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-.navigation-user-link, .navigation-link, .furniture-link, .gadget-link, .quadrocopter-link {
+.navigation-user-link,
+.navigation-link,
+.furniture-link,
+.gadget-link,
+.quadrocopter-link {
   color: #000000;
   text-decoration: none;
 }
@@ -98,6 +111,11 @@ body {
 .main-index {
   color: #000000;
   background-color: #ffffff;
+}
+
+.gallery-products {
+  background: #ffffff;
+  background: linear-gradient(to bottom, #FFE17F 0%, #FFE17F 300px, #ffffff 300px, #ffffff 100%);
 }
 
 .slider-pagination-item h3 {
@@ -128,8 +146,27 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-list {
-  background-color: #F0F0F0;
+.advantages {
+  background: #ffffff;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 102px, #F0F0F0 102px, #F0F0F0 100%);
+}
+
+.advantages-delivery {
+  background-image: url("../images/delivery.svg");
+  background-repeat: no-repeat;
+  background-position: 1101px 77.5px;
+}
+
+.advantages-guarantee {
+  background-image: url("../images/guarantee.svg");
+  background-repeat: no-repeat;
+  background-position: 1101px 62px;
+}
+
+.advantages-credit {
+  background-image: url("../images/credit.svg");
+  background-repeat: no-repeat;
+  background-position: 1116px 65.5px;
 }
 
 .advantages-item h3 {
@@ -210,7 +247,6 @@ body {
 /* FOOTER */
 
 .page-footer {
-  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
