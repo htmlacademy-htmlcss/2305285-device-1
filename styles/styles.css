@@ -90,6 +90,10 @@ body {
   width: 517px;
 }
 
+.navigation-field {
+  width: 359px;
+}
+
 .navigation {
   width: 1040px;
   margin: 0 auto;
@@ -122,6 +126,14 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+/*
+.furniture-list,
+.gadget-list,
+.quadrocopter-list {
+  width: 250px;
+}
+*/
 
 /* Список .navigation-user имеет отсупы внизу - почему? */
 
@@ -414,7 +426,7 @@ body {
   margin: 0 auto;
 }
 
-.field {
+.newslatter-field {
   width: 557px;
 }
 
@@ -438,17 +450,45 @@ body {
 
 /* FOOTER */
 
-.page-footer-container {
-  display: flex;
-  width: 100%;
-
-}
-
 .page-footer {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
   background-color: #444444;
+  display: flex;
+  width: 100%;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.footer-contacts {
+  width: 239px;
+  margin-right: 119px;
+}
+
+.footer-navigation-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social-list {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.footer-number-htmlacademy {
+  max-width: 175px;
+  margin-left: auto;
+}
+
+.footer-navigation-social-container {
+  width: 444px;
 }
 
 .footer-navigation-link {
@@ -485,6 +525,9 @@ body {
 
 .breadcrumbs {
   color: #000000;
+  display: flex;
+  width: 429px;
+  justify-content: space-between;
 }
 
 .breadcrumbs-link {
@@ -492,8 +535,28 @@ body {
   text-decoration: none;
 }
 
+.inner-header {
+  width: 1079px;
+  margin: 0 auto;
+}
+
 .catalog-products {
   background-color: #F0F0F0;
+  width: 100%;
+}
+
+.catalog-products-container {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.catalog-filter {
+  width: 320px;
+}
+
+.catalog-right-column {
+  width: 840px;
 }
 
 .catalog-products-title {
