@@ -21,6 +21,7 @@
           <ul class="navigation-user">
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">Войти</a>
+              <a class="navigation-user-link" href="#">Коля Петухов</a>
             </li>
             <li class="navigation-user-item">
               <a class="navigation-user-link" href="#">Сравнить</a>
@@ -34,34 +35,34 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Каталог товаров</a>
-            <ul class="catalog-sort-list">
-              <li class="catalog-sort-item">
-                <ul class="furniture-list">
-                  <li class="furniture-item">
-                    <a class="furniture-link" href="#">Виртуальная реальность</a>
+            <ul class="navigation-sublist">
+              <li class="navigation-subitem">
+                <ul>
+                  <li>
+                    <a class="navigation-sublink" href="#">Виртуальная реальность</a>
                   </li>
-                  <li class="furniture-item">
-                    <a class="furniture-link" href="catalog.html">Моноподы для cелфи</a>
+                  <li>
+                    <a class="navigation-sublink" href="catalog.html">Моноподы для cелфи</a>
                   </li>
-                  <li class="furniture-item">
-                    <a class="furniture-link" href="#">Экшн-камеры</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="catalog-filter-item">
-                <ul class="gadget-list">
-                  <li class="gadget-item">
-                    <a class="gadget-link" href="#">Фитнес-браслеты</a>
-                  </li>
-                  <li class="gadget-item">
-                    <a class="gadget-link" href="#">Умные часы</a>
+                  <li>
+                    <a class="navigation-sublink" href="#">Экшн-камеры</a>
                   </li>
                 </ul>
               </li>
-              <li class="catalog-filter-item">
-                <ul class="quadrocopter-list">
-                  <li class="quadrocopter-item">
-                    <a class="quadrocopter-link" href="#">Квадрокоптеры</a>
+              <li class="navigation-subitem">
+                <ul>
+                  <li>
+                    <a class="navigation-sublink" href="#">Фитнес-браслеты</a>
+                  </li>
+                  <li>
+                    <a class="navigation-sublink" href="#">Умные часы</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation-subitem">
+                <ul>
+                  <li>
+                    <a class="navigation-sublink" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
               </li>
@@ -94,8 +95,8 @@
             </button>
           </div>
 
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
+          <ol class="slider">
+            <li class="slider-item">
               <section class="slider-imagion">
                 <img src="images/slider-1.png" alt="Квадрокоптер с лазером" width="560" height="560">
               </section>
@@ -113,14 +114,14 @@
               </section>
             </li>
 
-            <li class="slider-pagination-item">
+            <li class="slider-item">
               <section class="slider-imagion">
                 <img src="images/slider-2.png" alt="Фитнес-браслет" width="560" height="560">
               </section>
               <section class="slider-description">
                 <h3>Худеем правильно!</h3>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-                <a a class="button" href="#">Подробнее</a>
+                <a class="button" href="#">Подробнее</a>
                 <dl>
                   <dt>Без подзарядки</dt>
                   <dd>48 часов</dd>
@@ -128,7 +129,7 @@
               </section>
             </li>
 
-            <li class="slider-pagination-item">
+            <li class="slider-item">
               <section class="slider-imagion">
                 <img src="images/slider-3.png" alt="Селфи-палка длинная" width="560" height="560">
               </section>
@@ -136,7 +137,7 @@
                 <h3>Делай селфи, как Бен Стиллер! </h3>
                 <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
                   всего 5 кг.</p>
-                <a a class="button" href="#">Подробнее</a>
+                <a class="button" href="#">Подробнее</a>
                 <dl>
                   <dt>Длина палки</dt>
                   <dd>8,5 м</dd>
@@ -149,19 +150,19 @@
             </li>
           </ol>
 
-          <ol class="under-pagination-list">
-            <li class="under-pagination-item">
-              <button class="under-pagination-button under-pagination-button-current" type="button">
+          <ol class="slider-pagination-list">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
                 <span class="visually-hidden">Первый товар</span>
               </button>
             </li>
-            <li class="under-pagination-item">
-              <button class="under-pagination-button" type="button">
+            <li class="slider">
+              <button class="slider-pagination-button" type="button">
                 <span class="visually-hidden">Второй товар</span>
               </button>
             </li>
-            <li class="under-pagination-item">
-              <button class="under-pagination-button" type="button">
+            <li class="slider-pagination-item">
+              <button class="slider-pagination-button" type="button">
                 <span class="visually-hidden">Третий товар</span>
               </button>
             </li>
@@ -214,7 +215,6 @@
           </li>
           <li class="catalog-item">
             <a class="catalog-button" href="#">
-
               <div class="catalog-container">
                 <img src="images/quadrocopter.svg" alt="" width="132" height="69">
               </div>
@@ -227,11 +227,23 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="advantages-container">
+          <div class="advantages-button-container">
+            <ol class="advantages-button-list">
+              <li>
+                <button class="button advantages-button" type="button">Доставка</button>
+              </li>
+              <li>
+                <button class="button advantages-button" type="button">Гарантия</button>
+              </li>
+              <li>
+                <button class="button advantages-button" type="button">Кредит</button>
+              </li>
+            </ol>
+          </div>
+
+
           <ol class="advantages-list">
             <li class="advantages-item advantages-delivery">
-              <section class="advantages-button">
-                <button class="button" type="button">Доставка</button>
-              </section>
               <section class="advantages-description">
                 <h3>Доставка</h3>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
@@ -240,9 +252,6 @@
             </li>
 
             <li class="advantages-item advantages-guarantee">
-              <section class="advantages-button">
-                <button class="button" type="button">Гарантия</button>
-              </section>
               <section class="advantages-description">
                 <h3>Гарантия</h3>
                 <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не
@@ -251,9 +260,6 @@
             </li>
 
             <li class="advantages-item advantages-credit">
-              <section class="advantages-button">
-                <button class="button" type="button">Кредит</button>
-              </section>
               <section class="advantages-description">
                 <h3>Кредит</h3>
                 <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для
