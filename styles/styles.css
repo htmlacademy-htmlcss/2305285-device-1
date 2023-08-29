@@ -26,6 +26,12 @@ html {
   height: 100%;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
 body {
   margin: 0;
   display: flex;
@@ -61,13 +67,15 @@ body {
   margin: 0 auto;
 }
 
+.navigation {
+  width: 1160px;
+  padding-top: 5px;
+  padding-right: 60px;
+  padding-left: 60px;
+}
 
 .navigation-logo {
   width: 145px;
-  margin-top: 5px;
-  margin-right: 995px;
-  margin-bottom: 134px;
-  margin-left: 60px;
 }
 
 .navigation-user-container {
@@ -87,17 +95,13 @@ body {
 
 .search-form {
   width: 517px;
+  flex-shrink: 0;
 }
 
 .navigation-field {
   width: 359px;
+  flex-shrink: 0;
 }
-
-.navigation {
-  width: 1040px;
-  margin: 0 auto;
-}
-
 
 .navigation-list {
   font-family: "Raleway", sans-serif;
@@ -125,7 +129,6 @@ body {
   display: flex;
   flex-direction: row;
 }
-
 
 /* Список .navigation-user имеет отсупы внизу - почему? */
 
@@ -259,6 +262,10 @@ body {
   width: 160px;
 }
 
+.catalog-description {
+  font-size: 18px;
+}
+
 .catalog-container {
   display: flex;
   background-color: #FFE17F;
@@ -279,19 +286,19 @@ body {
 .advantages-delivery {
   background-image: url("../images/delivery.svg");
   background-repeat: no-repeat;
-  background-position: 674px 77.5px;
+  background-position: 558px 77.5px;
 }
 
 .advantages-guarantee {
   background-image: url("../images/guarantee.svg");
   background-repeat: no-repeat;
-  background-position: 674px 62px;
+  background-position: 558px 62px;
 }
 
 .advantages-credit {
   background-image: url("../images/credit.svg");
   background-repeat: no-repeat;
-  background-position: 689px 65.5px;
+  background-position: 573px 65.5px;
 }
 
 .advantages-item h3 {
@@ -311,14 +318,14 @@ body {
 
 .advantages-item {
   display: flex;
-  width: 850px;
+  width: 730px;
+  margin-left: 116px;
 }
 
 .advantages-button {
   display: flex;
   flex-direction: column;
   width: 280px;
-
 }
 
 .advantages-button-container {
@@ -329,9 +336,7 @@ body {
 
 .advantages-description {
   width: 500px;
-  margin-left: 116px;
 }
-
 
 /* DELIVERY */
 
@@ -409,15 +414,10 @@ body {
 }
 
 .newslatter-container {
-  width: 1160px;
+  width: 1440px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-}
-
-.newslatter-description {
-  max-width: 560px;
-  margin-left: auto;
 }
 
 .newslatter-title {
@@ -425,13 +425,19 @@ body {
   font-size: 50px;
   line-height: 50px;
   width: 348px;
+  margin-left: 147px;
+  margin-right: 252px;
+}
+
+.newslatter-description {
+  width: 560px;
+  margin-right: 133px;
 }
 
 .newslatter-form-container {
   width: 1160px;
   margin: 0 auto;
   display: flex;
-  margin: 0 auto;
 }
 
 .newslatter-field {
@@ -454,8 +460,6 @@ body {
   text-transform: uppercase;
 }
 
-
-
 /* FOOTER */
 
 .page-footer {
@@ -469,12 +473,13 @@ body {
 
 .page-footer-container {
   display: flex;
-  width: 1160px;
+  width: 1440px;
   margin: 0 auto;
 }
 
 .footer-contacts {
   width: 239px;
+  margin-left: 140px;
   margin-right: 119px;
 }
 
@@ -491,12 +496,16 @@ body {
 }
 
 .footer-number-htmlacademy {
-  max-width: 175px;
-  margin-left: auto;
+  width: 175px;
+  margin-left: 183px;
 }
 
 .footer-navigation-social-container {
   width: 444px;
+}
+
+.htmlacademy-logo {
+  margin-left: 60px;
 }
 
 .footer-navigation-link {
