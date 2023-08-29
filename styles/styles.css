@@ -98,14 +98,21 @@ body {
   flex-shrink: 0;
 }
 
+.search-button {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
 .navigation-field {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
   width: 359px;
   flex-shrink: 0;
 }
 
 .navigation-list {
   font-family: "Raleway", sans-serif;
-  line-height: 18px;
+  font-size: 18px;
   color: #000000;
   background-color: #FFE17F;
   text-decoration: none;
@@ -129,8 +136,6 @@ body {
   display: flex;
   flex-direction: row;
 }
-
-/* Список .navigation-user имеет отсупы внизу - почему? */
 
 .navigation-user,
 .navigation-list,
@@ -229,7 +234,6 @@ body {
   font-size: 36px;
 }
 
-
 /* CATALOG */
 
 .catalog-button {
@@ -281,7 +285,6 @@ body {
   background: #ffffff;
   background: linear-gradient(to bottom, #ffffff 0%, #ffffff 102px, #F0F0F0 102px, #F0F0F0 100%);
 }
-
 
 .advantages-delivery {
   background-image: url("../images/delivery.svg");
@@ -441,10 +444,13 @@ body {
 }
 
 .newslatter-field {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
   width: 557px;
 }
 
 .newslatter-button {
+  font-size: 18px;
   width: 253px;
 }
 
@@ -455,7 +461,6 @@ body {
 
 .newslatter-button {
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -522,10 +527,6 @@ body {
   background-color: #444444;
 }
 
-
-
-
-
 /* КАТАЛОГ */
 
 .inner-header-title {
@@ -583,6 +584,7 @@ body {
 }
 
 .catalog-filter-title {
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -645,7 +647,6 @@ body {
   color: #444444;
   background-color: #F0F0F0;
   text-transform: uppercase;
-
 }
 
 .pagination-next {
