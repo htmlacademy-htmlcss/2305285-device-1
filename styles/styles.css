@@ -287,6 +287,7 @@ body {
 .advantages {
   background: #ffffff;
   background: linear-gradient(to bottom, #ffffff 0%, #ffffff 102px, #F0F0F0 102px, #F0F0F0 100%);
+  width: 100%;
 }
 
 .advantages-delivery {
@@ -312,32 +313,27 @@ body {
   line-height: 50px;
 }
 
-.advantages {
-  width: 100%;
-}
-
 .advantages-container {
   width: 1160px;
+  display: flex;
   margin: 0 auto;
-  display: flex;
-}
-
-.advantages-item {
-  display: flex;
-  width: 730px;
-  margin-left: 116px;
-}
-
-.advantages-button {
-  display: flex;
-  flex-direction: column;
-  width: 280px;
 }
 
 .advantages-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+.advantages-button {
+  width: 280px;
+  margin-right: 116px;
+}
+
+.advantages-item {
+  display: flex;
+  width: 730px;
 }
 
 .advantages-description {
@@ -406,6 +402,7 @@ body {
 
 .about {
   width: 520px;
+  margin-right: 108px;
 }
 
 .contacts {
@@ -491,6 +488,10 @@ body {
   margin-right: 119px;
 }
 
+.footer-navigation-social-container {
+  width: 444px;
+}
+
 .footer-navigation-list {
   display: flex;
   justify-content: space-between;
@@ -506,10 +507,6 @@ body {
 .footer-number-htmlacademy {
   width: 175px;
   margin-left: 183px;
-}
-
-.footer-navigation-social-container {
-  width: 444px;
 }
 
 .htmlacademy-logo {
