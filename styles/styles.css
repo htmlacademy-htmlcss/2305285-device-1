@@ -76,24 +76,18 @@ body {
 
 .navigation-logo {
   width: 145px;
+  display: block;
+  padding-bottom: 30px;
 }
 
 .navigation-user-container {
   width: 1040px;
   display: flex;
-  margin: 30px 0;
+  justify-content: space-between;
+  padding-bottom: 30px;
 }
 
-.navigation-user {
-  display: flex;
-  width: 480px;
-}
-
-.navigation-user-container:last-child {
-  margin-right: 0;
-}
-
-.search-form {
+.search-container {
   width: 517px;
   flex-shrink: 0;
 }
@@ -103,11 +97,52 @@ body {
   font-size: 16px;
 }
 
+.profile-container {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tools-container {
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-user-link {
+  padding-left: 25px;
+}
+
 .navigation-field {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   width: 359px;
   flex-shrink: 0;
+}
+
+.product-catalog {
+  width: 293px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  width: 470px;
+  flex-wrap: wrap;
+}
+
+.navigation-link {
+  letter-spacing: 3.6px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list:last-child {
+  padding-right: 0;
+}
+
+.menu-item {
+  max-width: 127px;
 }
 
 .navigation-list {
@@ -137,10 +172,15 @@ body {
   flex-direction: row;
 }
 
-.navigation-user,
+.navigation-sublist-active {
+  display: flex;
+  justify-content: space-between;
+  width: 675px;
+}
+
 .navigation-list,
+.list,
 .navigation-sublist,
-.navigation-sublink,
 .slider,
 .slider-pagination-list,
 .catalog-list,
@@ -161,7 +201,8 @@ body {
 
 .navigation-user-link,
 .navigation-link,
-.navigation-sublink {
+.navigation-sublink,
+.profile-exit {
   color: #000000;
   text-decoration: none;
 }
@@ -177,17 +218,35 @@ body {
   background-color: #ffffff;
 }
 
+.button {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+}
+
 /*  SLIDER */
+
+.gallery-products {
+  background: #ffffff;
+  background: linear-gradient(to bottom, #FFE17F 0%, #FFE17F 150px, #ffffff 150px, #ffffff 100%);
+}
 
 .slider-button-container {
   width: 530px;
   display: flex;
   justify-content: space-between;
+  margin-left: 30px;
 }
 
 .slider-button {
   width: 20px;
-  margin-left: 30px;
+  height: 60px;
+  margin-top: -349px;
 }
 
 .slider-container {
@@ -206,6 +265,40 @@ body {
 
 .slider-description {
   width: 560px;
+  padding-top: 121px;
+}
+
+.more-detailed {
+  display: block;
+  width: 210px;
+  padding: 10px 5px;
+  margin-bottom: 50px;
+}
+
+.slider-description h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+
+.slider-description p {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.specification {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.slider-description dd {
+  font-size: 36px;
+}
+
+.slider-description dt {
+  font-size: 16px;
 }
 
 .slider-pagination-list {
@@ -213,28 +306,20 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .slider-pagination-item {
   width: 12px;
-}
-
-.gallery-products {
-  background: #ffffff;
-  background: linear-gradient(to bottom, #FFE17F 0%, #FFE17F 300px, #ffffff 300px, #ffffff 100%);
-}
-
-.slider-item h3 {
-  font-family: "Raleway", sans-serif;
-  font-size: 50px;
-  line-height: 50px;
-}
-
-.slider dd {
-  font-size: 36px;
+  height: 12px;
 }
 
 /* CATALOG */
+
+.catalog {
+  margin: 0;
+  margin-bottom: 70px;
+}
 
 .catalog-button {
   font-family: "Raleway", sans-serif;
@@ -246,18 +331,9 @@ body {
   flex-direction: column;
 }
 
-.button {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
 .catalog-list {
   width: 1160px;
+  height: 253px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -270,6 +346,7 @@ body {
 
 .catalog-description {
   font-size: 18px;
+  margin: 0;
 }
 
 .catalog-container {
@@ -280,6 +357,7 @@ body {
   justify-content: center;
   align-items: center;
   order: -1;
+  margin-bottom: 32px;
 }
 
 /* ADVANTAGES */
@@ -288,6 +366,8 @@ body {
   background: #ffffff;
   background: linear-gradient(to bottom, #ffffff 0%, #ffffff 102px, #F0F0F0 102px, #F0F0F0 100%);
   width: 100%;
+  height: 391px;
+  margin-bottom: 70px;
 }
 
 .advantages-delivery {
@@ -311,12 +391,16 @@ body {
 .advantages-item h3 {
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  margin-bottom: 34px;
 }
 
 .advantages-container {
   width: 1160px;
+  height: 319px;
   display: flex;
   margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .advantages-button-container {
@@ -324,12 +408,39 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
+  width: 280px;
+  height: 190px;
+  margin-right: 116px;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
-.advantages-button {
+/* .advantages-button-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
   width: 280px;
+  height: 190px;
   margin-right: 116px;
+  margin-top: 64px;
+  margin-bottom: 64px;
+} */
+
+
+.advantages-button {
+  width: 160px;
+  padding: 10px 4px;
+  margin-bottom: 35px;
+  border: 0;
 }
+
+/* НЕ РАБОТАЕТ
+.advantages-button-list:nth-child(3n) {
+  margin-bottom: 0;
+} */
 
 .advantages-item {
   display: flex;
@@ -338,6 +449,12 @@ body {
 
 .advantages-description {
   width: 500px;
+  margin-top: 72.5px;
+  margin-bottom: 72.5px;
+}
+
+.advantages-description p {
+  margin: 0;
 }
 
 /* DELIVERY */
@@ -352,6 +469,9 @@ body {
   width: 1160px;
   height: 100px;
   border: none;
+  padding: 0;
+  letter-spacing: 4px;
+  margin-bottom: 70px;
 }
 
 .about h2 {
@@ -457,6 +577,7 @@ body {
 .newslatter-form-description {
   max-width: 160px;
   margin-left: auto;
+  margin-top: 0;
 }
 
 .newslatter-button {
@@ -500,8 +621,18 @@ body {
 .footer-social-list {
   width: 150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
+}
+
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-social-list:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-number-htmlacademy {
