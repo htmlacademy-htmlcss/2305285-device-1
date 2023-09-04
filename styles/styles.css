@@ -430,17 +430,20 @@ body {
 } */
 
 
-.advantages-button {
-  width: 160px;
-  padding: 10px 4px;
+.advantages-button-item {
   margin-bottom: 35px;
   border: 0;
 }
 
-/* НЕ РАБОТАЕТ
-.advantages-button-list:nth-child(3n) {
+.advantages-button-item:last-child {
   margin-bottom: 0;
-} */
+}
+
+.advantages-button {
+  border: 0;
+  width: 160px;
+  padding: 10px 4px;
+}
 
 .advantages-item {
   display: flex;
@@ -458,6 +461,11 @@ body {
 }
 
 /* DELIVERY */
+
+.delivery-service {
+  width: 1160px;
+  margin: 0 auto;
+}
 
 .delivery-service-button {
   font-family: "Raleway", sans-serif;
@@ -478,40 +486,12 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  margin: 0;
+  margin-top: 47px;
+  margin-bottom: 48px;
 }
 
-.delivery-list {
-  font-weight: 700;
-  line-height: 20px;
-}
-
-.delivery-service {
-  width: 1160px;
-  margin: 0 auto;
-}
-
-/* CONTACTS */
-
-.contacts-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 50px;
-  line-height: 50px;
-}
-
-.contacts-subtitle {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.contacts-address-text {
-  font-style: normal;
-}
-
-.contacts-number-phone {
-  font-style: normal;
-  color: #000000;
-  background-color: #ffffff;
-}
+/* ABOUT */
 
 .about-contacts-container {
   width: 1160px;
@@ -525,8 +505,77 @@ body {
   margin-right: 108px;
 }
 
+.about p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.delivery-list {
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.delivery-item {
+  padding-bottom: 19px;
+  padding-left: 34px;
+}
+
+.delivery-item:last-child {
+  padding-bottom: 0;
+}
+
+.about-button {
+  width: 258px;
+  padding: 10px 6px;
+}
+
+/* CONTACTS */
+
 .contacts {
   width: 532px;
+  margin-bottom: 70px;
+}
+
+.contacts h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: 47px;
+  margin-bottom: 48px;
+}
+
+.contacts-description {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.contacts-subtitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.contacts-address-text {
+  font-style: normal;
+  margin: 0;
+}
+
+.contacts-number-phone {
+  font-style: normal;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.contacts-address,
+.contacts-schedule {
+  margin-bottom: 30px;
+}
+
+.contacts-button {
+  width: 247px;
+  padding: 10px 6px;
 }
 
 /* NEWSLATTER */
@@ -534,6 +583,7 @@ body {
 .newslatter {
   background-color: #F0F0F0;
   width: 100%;
+  height: 421px;
 }
 
 .newslatter-container {
@@ -548,19 +598,27 @@ body {
   font-size: 50px;
   line-height: 50px;
   width: 348px;
-  margin-left: 147px;
+  margin: 0;
+  margin-top: 64px;
   margin-right: 252px;
+  margin-bottom: 144px;
+  margin-left: 147px;
 }
 
 .newslatter-description {
   width: 560px;
+  margin-top: 74px;
   margin-right: 133px;
+  margin-bottom: 144px;
 }
 
 .newslatter-form-container {
   width: 1160px;
+  height: 57px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 56px;
 }
 
 .newslatter-field {
@@ -570,20 +628,16 @@ body {
 }
 
 .newslatter-button {
+  font-family: "Raleway", sans-serif;
+  background-color: #F0F0F0;
   font-size: 18px;
-  width: 253px;
+  padding: 18px 39px;
+  border: 0;
 }
 
 .newslatter-form-description {
-  max-width: 160px;
-  margin-left: auto;
-  margin-top: 0;
-}
-
-.newslatter-button {
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  text-transform: uppercase;
+  width: 128px;
+  margin: auto 0;
 }
 
 /* FOOTER */
