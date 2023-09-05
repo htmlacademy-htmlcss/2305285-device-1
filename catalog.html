@@ -14,30 +14,28 @@
           <img src="images/logo-header.svg" alt="Логотип сайта device" width="145" height="36">
         </a>
         <div class="navigation-user-container">
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-            <input class="navigation-field" type="text" name="search" placeholder="Поиск по сайту">
-            <button class="search-button" type="submit">Найти</button>
-          </form>
-          <ul class="navigation-user">
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Войти</a>
-              <a class="navigation-user-link" href="#">Коля Петухов</a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-user-item">
-              <a class="navigation-user-link" href="#">Корзина</a>
-            </li>
-          </ul>
+          <div class="search-container">
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+              <input class="navigation-field" type="text" name="search" placeholder="Поиск по сайту">
+              <button class="search-button" type="submit">Найти</button>
+            </form>
+          </div>
+          <div class="profile-container">
+            <a class="navigation-user-link visually-hidden" href="#">Войти</a>
+            <a class="navigation-user-link active-profile" href="#">Коля Петухов</a>
+            <a class="navigation-user-link active-profile profile-exit" href="#">Выйти</a>
+          </div>
+          <div class="tools-container">
+            <a class="navigation-user-link" href="#">Сравнить</a>
+            <a class="navigation-user-link" href="#">Корзина</a>
+          </div>
         </div>
-
-        <ul class="navigation-list">
-          <li class="navigation-item">
+        <div class="navigation-list">
+          <div class="product-catalog-container">
             <a class="navigation-link" href="#">Каталог товаров</a>
-            <ul class="navigation-sublist">
+            <ul class="navigation-sublist navigation-sublist-active visually-hidden">
               <li class="navigation-subitem">
-                <ul>
+                <ul class="list">
                   <li>
                     <a class="navigation-sublink" href="#">Виртуальная реальность</a>
                   </li>
@@ -50,7 +48,7 @@
                 </ul>
               </li>
               <li class="navigation-subitem">
-                <ul>
+                <ul class="list">
                   <li>
                     <a class="navigation-sublink" href="#">Фитнес-браслеты</a>
                   </li>
@@ -60,46 +58,53 @@
                 </ul>
               </li>
               <li class="navigation-subitem">
-                <ul>
+                <ul class="list">
                   <li>
                     <a class="navigation-sublink" href="#">Квадрокоптеры</a>
                   </li>
                 </ul>
               </li>
             </ul>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Контакты</a>
-          </li>
-        </ul>
+          </div>
+          <div class="menu-container">
+            <ul class="menu-list list">
+              <li class="menu-item">
+                <a class="navigation-link" href="#">Доставка</a>
+              </li>
+              <li class="menu-item">
+                <a class="navigation-link" href="#">Гарантия</a>
+              </li>
+              <li class="menu-item">
+                <a class="navigation-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main class="main-inner main-container">
       <header class="inner-header">
-        <h1 class="inner-header-title">Моноподы для селфи</h1>
-        <ol class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="#">Каталог товаров</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Моноподы для селфи</a>
-          </li>
-        </ol>
+        <div class="breadcrumbs-container">
+          <h1 class="inner-header-title">Моноподы для селфи</h1>
+          <ol class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="#">Каталог товаров</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Моноподы для селфи</a>
+            </li>
+          </ol>
+        </div>
+
       </header>
 
       <section class="catalog-products">
         <div class="catalog-products-container">
-          <h2 class="catalog-products-title">Фильтр:</h2>
+          <h2 class="catalog-products-title-filer">Фильтр:</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость</legend>
@@ -162,20 +167,25 @@
           </form>
 
           <div class="catalog-right-column">
-            <h2 class="catalog-products-title">Сортировка:</h2>
-            <select class="select-control" aria-label="Сортировка">
-              <option value="popular">Популярные</option>
-              <option value="cheap">Дешевые</option>
-              <option value="expensive">Дорогие</option>
-            </select>
-            <a href="#" class="button-sort">
-              <span class="visually-hidden">От меньшего к большему</span>
-            </a>
-            <a href="#" class="button-sort">
-              <span class="visually-hidden">От большего к меньшему</span>
-            </a>
-
             <div class="sorting-container">
+              <h2 class="catalog-products-title">Сортировка:</h2>
+              <select class="select-control" aria-label="Сортировка">
+                <option value="popular">Популярные</option>
+                <option value="cheap">Дешевые</option>
+                <option value="expensive">Дорогие</option>
+              </select>
+              <div class="button-sort-container">
+                <a href="#" class="button-sort">
+                  <span class="visually-hidden">От меньшего к большему</span>
+                </a>
+                <a href="#" class="button-sort">
+                  <span class="visually-hidden">От большего к меньшему</span>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="product-container">
               <ul class="product-list">
                 <li class="product-card">
                   <a class="product-card-link" href="#">
