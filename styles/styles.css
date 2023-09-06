@@ -798,22 +798,21 @@ body {
   width: 1160px;
   margin: 0 auto;
   display: flex;
-
   padding-left: 60px;
 }
 
-.catalog-filter {
-  width: 320px;
+.filter {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
 }
 
 .catalog-right-column {
   width: 840px;
 }
 
-.catalog-products-title-filer {}
-
 .catalog-products-title,
-.catalog-products-title-filer {
+.catalog-products-title-filter {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
@@ -822,12 +821,32 @@ body {
   padding: 0;
 }
 
-.sorting-container {
-  width: 840px;
+.catalog-products-title-filter {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 35px;
+}
+
+.catalog-products-title {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px 40px;
+  align-items: center;
+}
+
+.catalog-filter-group {
+  border: none;
+  margin-bottom: 35px;
+}
+
+.catalog-filter-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.button-show {
+  width: 210px;
+  padding: 10px 5px;
+  background-color: #F0F0F0;
+  border: 0;
 }
 
 .button-sort-container {
@@ -845,20 +864,25 @@ body {
   text-decoration: none;
 }
 
-.catalog-filter-title {
-  font-size: 18px;
-  font-weight: 700;
+.sorting-container {
+  width: 840px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 40px;
 }
 
-.catalog-filter-group {
-  border: none;
+.select-control {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  width: 140px;
+  border: 0;
 }
 
 .product-container {
   background-color: #FFFFFF;
-  padding-top: 70px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding: 70px 40px 78px 40px;
 }
 
 .product-card-link {
@@ -880,39 +904,90 @@ body {
   background-color: #FFFFFF;
 }
 
+.product-list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 44px;
+}
+
 .button-show-more {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 3.2px;
   color: #000000;
   background-color: #FFFFFF;
+  width: 760px;
+  padding: 18px 39px;
+  border: 3px solid #E5E5E5;
+  margin-bottom: 44px;
 }
 
 .pagination-container {
   background-color: #F0F0F0;
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
+}
+
+.pagination-numbers,
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-numbers {
+  padding-top: 15.5px;
+  padding-bottom: 15.5px;
 }
 
 .pagination-link {
+  display: block;
   color: #444444;
   background-color: #F0F0F0;
   text-align: center;
   text-decoration: none;
+  opacity: 0.3;
+  padding: 10px 15px;
+}
+
+.pagination-item {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
 .pagination-prev {
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   color: #444444;
   background-color: #F0F0F0;
   text-transform: uppercase;
+  opacity: 0.3;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
 }
 
 .pagination-next {
+  display: flex;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   color: #000000;
   background-color: #F0F0F0;
   text-transform: uppercase;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  opacity: 1;
+}
+
+.pagination-current {
+  opacity: 0.6;
 }
