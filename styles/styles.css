@@ -85,6 +85,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-bottom: 30px;
+  align-items: center;
 }
 
 .search-container {
@@ -92,9 +93,15 @@ body {
   flex-shrink: 0;
 }
 
+.search-form {
+  display: flex;
+}
+
 .search-button {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
+  width: 160px;
+  padding: 10px;
 }
 
 .profile-container {
@@ -445,6 +452,10 @@ body {
   margin-bottom: 35px;
 }
 
+.advantages-button-active:last-child {
+  margin-bottom: 0;
+}
+
 .advantages-button-active {
   background-color: #000000;
   color: #FFE17F;
@@ -622,6 +633,10 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+}
+
+.newslatter-form {
+  display: flex;
 }
 
 .newslatter-field {
