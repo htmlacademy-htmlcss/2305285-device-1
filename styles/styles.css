@@ -97,11 +97,22 @@ body {
   display: flex;
 }
 
+.navigation-field {
+  background-color: #FFE17F;
+  border-radius: 50px 0px 0px 50px;
+  border: 2px solid #000;
+  border-right: 0;
+  padding-left: 48px;
+}
+
 .search-button {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
   width: 160px;
   padding: 10px;
+  background-color: #FFE17F;
+  border-radius: 0px 50px 50px 0px;
+  border: 2px solid #000;
 }
 
 .profile-container {
@@ -643,6 +654,10 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   width: 557px;
+  border: 0;
+  background-color: #F0F0F0;
+  border-bottom: 3px solid #C4C4C4;
+  padding-left: 16px;
 }
 
 .newslatter-button {
@@ -650,7 +665,7 @@ body {
   background-color: #F0F0F0;
   font-size: 18px;
   padding: 18px 39px;
-  border: 0;
+  border: 3px solid #C4C4C4;
 }
 
 .newslatter-form-description {
