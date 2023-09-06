@@ -62,7 +62,7 @@ body {
 
 .page-header {
   color: #000000;
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20px, #FFE17F 20px, #FFE17F 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 25px, #FFE17F 25px, #FFE17F 100%);
   width: 1160px;
   margin: 0 auto;
 }
@@ -120,8 +120,10 @@ body {
   flex-shrink: 0;
 }
 
-.product-catalog {
+.navigation-catalog-products {
+  display: flex;
   width: 293px;
+  padding: 15px 57px 15px 0;
 }
 
 .menu-list {
@@ -135,6 +137,8 @@ body {
   letter-spacing: 3.6px;
   display: flex;
   align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .menu-list:last-child {
@@ -157,6 +161,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigation-sublist {
@@ -416,21 +421,8 @@ body {
   margin-bottom: 64px;
 }
 
-/* .advantages-button-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 280px;
-  height: 190px;
-  margin-right: 116px;
-  margin-top: 64px;
-  margin-bottom: 64px;
-} */
-
-
 .advantages-button-item {
+  width: 280px;
   margin-bottom: 35px;
   border: 0;
 }
@@ -443,6 +435,19 @@ body {
   border: 0;
   width: 160px;
   padding: 10px 4px;
+  background-color: #F0F0F0;
+  text-align: center;
+}
+
+.advantages-button-active-container {
+  width: 280px;
+  background-color: #000000;
+  margin-bottom: 35px;
+}
+
+.advantages-button-active {
+  background-color: #000000;
+  color: #FFE17F;
 }
 
 .advantages-item {
