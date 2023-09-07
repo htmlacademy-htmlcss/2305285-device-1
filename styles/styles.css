@@ -77,14 +77,14 @@ body {
 .navigation-logo {
   width: 145px;
   display: block;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .navigation-user-container {
   width: 1040px;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   align-items: center;
 }
 
@@ -138,33 +138,12 @@ body {
   flex-shrink: 0;
 }
 
-.navigation-catalog-products {
-  display: flex;
-  width: 293px;
-  padding: 15px 57px 15px 0;
-}
-
-.menu-list {
-  display: flex;
-  justify-content: space-between;
-  width: 470px;
-  flex-wrap: wrap;
-}
-
 .navigation-link {
   letter-spacing: 3.6px;
   display: flex;
   align-items: center;
   padding-top: 14px;
   padding-bottom: 14px;
-}
-
-.menu-list:last-child {
-  padding-right: 0;
-}
-
-.menu-item {
-  max-width: 127px;
 }
 
 .navigation-list {
@@ -180,6 +159,23 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation-item {
+  margin-right: 45px;
+  width: 127px;
+}
+
+.navigation-item:first-child {
+  width: 293px;
+  margin-right: 276px;
+}
+
+.navigation-item:nth-child(4n),
+.navigation-item:last-child {
+  margin-right: 0;
+  flex-grow: 1;
 }
 
 .navigation-sublist {
@@ -191,14 +187,26 @@ body {
   text-decoration: none;
   text-transform: none;
   list-style: none;
-  display: flex;
+  display: none;
+  flex-wrap: wrap;
   flex-direction: row;
+  width: 675px;
 }
 
-.navigation-sublist-active {
+.navigation-sublist .is-active {
   display: flex;
-  justify-content: space-between;
   width: 675px;
+  justify-content: space-between;
+}
+
+.navigation-subitem {
+  display: flex;
+  width: 210px;
+  margin-right: 20px;
+}
+
+.navigation-subitem:last-child {
+  margin-right: 0;
 }
 
 .navigation-list,
@@ -686,13 +694,12 @@ body {
 
 .page-footer-container {
   display: flex;
-  width: 1440px;
+  width: 1160px;
   margin: 0 auto;
 }
 
 .footer-contacts {
   width: 239px;
-  margin-left: 140px;
   margin-right: 119px;
   margin-top: 62px;
 }
@@ -719,6 +726,7 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 62px;
+  gap: 35px;
 }
 
 .footer-navigation-link {
@@ -732,8 +740,6 @@ body {
 
 .footer-navigation-item {
   width: 130px;
-  margin-right: 35px;
-  margin-bottom: 35px;
 }
 
 .footer-navigation-item:nth-child(3n) {
@@ -762,7 +768,7 @@ body {
 
 .footer-number-htmlacademy {
   width: 175px;
-  margin-left: 183px;
+  margin-left: auto;
   margin-top: 140px;
   margin-bottom: 65px;
 }
