@@ -315,6 +315,7 @@ body {
 }
 
 .slider-description p {
+  display: flex;
   margin: 0;
   margin-bottom: 50px;
 }
@@ -322,13 +323,22 @@ body {
 .specification {
   margin: 0;
   margin-bottom: 26px;
+  display: flex;
 }
 
-.slider-description dd {
+.specification-item {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-right: 20px;
+}
+
+.specification-item dd {
   font-size: 36px;
+  margin: 0;
+  margin-bottom: 12px;
 }
 
-.slider-description dt {
+.specification-item dt {
   font-size: 16px;
 }
 
