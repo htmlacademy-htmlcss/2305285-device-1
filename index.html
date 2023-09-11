@@ -85,18 +85,18 @@
       <div class="slider-container">
         <section class="gallery-products">
           <h2 class="visually-hidden">Галерея товаров</h2>
+          <div class="slider-button-container">
+            <button class="slider-button slider-prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="slider-button slider-next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
           <ol class="slider">
-            <li class="slider-item">
+            <li class="slider-item slider-item-active">
               <section class="slider-imagion">
                 <img src="images/slider-1.png" alt="Квадрокоптер с лазером" width="560" height="560">
-                <div class="slider-button-container">
-                  <button class="slider-button slider-prev" type="button">
-                    <span class="visually-hidden">Предыдущий товар</span>
-                  </button>
-                  <button class="slider-button slider-next" type="button">
-                    <span class="visually-hidden">Следующий товар</span>
-                  </button>
-                </div>
               </section>
               <section class="slider-description">
                 <h3>Порхает как бабочка, жалит как пчела!</h3>
@@ -116,7 +116,7 @@
               </section>
             </li>
 
-            <li class="slider-item visually-hidden">
+            <li class="slider-item">
               <section class="slider-imagion">
                 <img src="images/slider-2.png" alt="Фитнес-браслет" width="560" height="560">
                 <div class="slider-button-container">
@@ -140,7 +140,7 @@
               </section>
             </li>
 
-            <li class="slider-item visually-hidden">
+            <li class="slider-item">
               <section class="slider-imagion">
                 <img src="images/slider-3.png" alt="Селфи-палка длинная" width="560" height="560">
                 <div class="slider-button-container">
@@ -254,23 +254,12 @@
           <div class="advantages-button-container">
             <ol class="advantages-button-list">
               <li class="advantages-button-item">
-                <div class="advantages-button-active-container">
-                  <button class="button advantages-button advantages-button-active" type="button">Доставка</button>
-                </div>
-                <button class="button advantages-button visually-hidden" type="button">Доставка</button>
+                <button class="button advantages-button advantages-button-active" type="button">Доставка</button>
               </li>
               <li class="advantages-button-item">
-                <div class="advantages-button-active-container">
-                  <button class="button advantages-button advantages-button-active visually-hidden"
-                    type="button">Гарантия</button>
-                </div>
                 <button class="button advantages-button" type="button">Гарантия</button>
               </li>
               <li class="advantages-button-item">
-                <div class="advantages-button-active-container">
-                  <button class="button advantages-button advantages-button-active visually-hidden"
-                    type="button">Кредит</button>
-                </div>
                 <button class="button advantages-button" type="button">Кредит</button>
               </li>
             </ol>
@@ -309,7 +298,7 @@
         <button class="delivery-service-button" type="button">Доставим редкий товар под заказ</button>
       </section>
 
-      <div class="about-contacts-container">
+      <section class="about-contacts">
         <section class="about">
           <h2>О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным <br>гика, который есть в каждом из нас.</p>
@@ -339,21 +328,20 @@
           </ol>
           <a class="contacts-button button" href="#">Напишите нам</a>
         </section>
-      </div>
+      </section>
 
       <section class="newslatter">
-        <div class="newslatter-container">
-          <h2 class="newslatter-title">Подпишитесь на рассылку</h2>
-          <p class="newslatter-description">Еженедельный дайджест с обзорами новинок, <br>длительными тест-драйвами,
-            распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-        </div>
-
         <div class="newslatter-form-container">
+          <h2 class="newslatter-title">Подпишитесь на рассылку</h2>
+          <div class="newslatter-description-container">
+            <p class="newslatter-description">Еженедельный дайджест с обзорами новинок, <br>длительными тест-драйвами,
+              распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          </div>
           <form class="newslatter-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="newslatter-field" type="email" name="newslatter-email" placeholder="Ваш e-mail">
             <button class="newslatter-button button" type="submit">Подписаться</button>
+            <p class="newslatter-form-description">Это бесплатно</p>
           </form>
-          <p class="newslatter-form-description">Это бесплатно</p>
         </div>
       </section>
     </main>

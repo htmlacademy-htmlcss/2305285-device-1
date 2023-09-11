@@ -272,20 +272,26 @@ body {
   display: flex;
   justify-content: space-between;
   margin-left: 30px;
+  position: absolute;
+  padding-top: 211px;
 }
 
 .slider-button {
   width: 20px;
   height: 60px;
-  margin-top: -349px;
 }
 
 .slider-container {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .slider-item {
+  display: none;
+}
+
+.slider-item-active {
   display: flex;
   justify-content: space-between;
 }
@@ -297,6 +303,7 @@ body {
 .slider-description {
   width: 560px;
   padding-top: 121px;
+  padding-bottom: 26px;
 }
 
 .more-detailed {
@@ -322,7 +329,6 @@ body {
 
 .specification {
   margin: 0;
-  margin-bottom: 26px;
   display: flex;
 }
 
@@ -347,7 +353,6 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 70px;
 }
 
 .slider-pagination-item {
@@ -374,9 +379,8 @@ body {
 
 .catalog-list {
   width: 1160px;
-  height: 253px;
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -407,7 +411,6 @@ body {
   background: #ffffff;
   background: linear-gradient(to bottom, #ffffff 0%, #ffffff 102px, #F0F0F0 102px, #F0F0F0 100%);
   width: 100%;
-  height: 391px;
   margin-bottom: 70px;
 }
 
@@ -438,23 +441,17 @@ body {
 
 .advantages-container {
   width: 1160px;
-  height: 319px;
   display: flex;
   margin: 0 auto;
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 .advantages-button-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
   width: 280px;
-  height: 190px;
   margin-right: 116px;
-  margin-top: 64px;
-  margin-bottom: 64px;
 }
 
 .advantages-button-item {
@@ -467,6 +464,12 @@ body {
   margin-bottom: 0;
 }
 
+.advantages-button-list {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-right: 7px solid #000;
+}
+
 .advantages-button {
   border: 0;
   width: 160px;
@@ -475,19 +478,11 @@ body {
   text-align: center;
 }
 
-.advantages-button-active-container {
+.advantages-button-active {
   width: 280px;
   background-color: #000000;
-  margin-bottom: 35px;
-}
-
-.advantages-button-active:last-child {
-  margin-bottom: 0;
-}
-
-.advantages-button-active {
-  background-color: #000000;
   color: #FFE17F;
+  padding-right: 120px;
 }
 
 .advantages-item {
@@ -496,9 +491,8 @@ body {
 }
 
 .advantages-description {
+  padding-top: 73px;
   width: 500px;
-  margin-top: 72.5px;
-  margin-bottom: 72.5px;
 }
 
 .advantages-description p {
@@ -527,22 +521,16 @@ body {
   margin-bottom: 70px;
 }
 
-.about h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 50px;
-  line-height: 50px;
-  margin: 0;
-  margin-top: 47px;
-  margin-bottom: 48px;
-}
-
 /* ABOUT */
 
-.about-contacts-container {
+.about-contacts {
   width: 1160px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
+  align-items: flex-start;
+  padding-top: 47px;
 }
 
 .about {
@@ -553,6 +541,14 @@ body {
 .about p {
   margin: 0;
   margin-bottom: 30px;
+}
+
+.about h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0;
+  margin-bottom: 48px;
 }
 
 .delivery-list {
@@ -579,14 +575,13 @@ body {
 
 .contacts {
   width: 532px;
-  margin-bottom: 70px;
 }
 
 .contacts h2 {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  margin-top: 47px;
+  margin: 0;
   margin-bottom: 48px;
 }
 
@@ -631,47 +626,38 @@ body {
   padding-bottom: 56px;
 }
 
-.newslatter-container {
-  width: 1440px;
-  display: flex;
-  justify-content: space-between;
+.newslatter-form-container {
+  width: 1160px;
+  padding-top: 64px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 348px 1fr;
+  row-gap: 144px;
+  column-gap: 252px;
 }
 
 .newslatter-title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
-  width: 348px;
-  margin-top: 64px;
-  margin-right: 252px;
-  margin-bottom: 144px;
-  margin-left: 147px;
+  max-width: 348px;
+  margin: 0;
 }
 
 .newslatter-description {
-  width: 560px;
-  margin-top: 74px;
-  margin-right: 133px;
-  margin-bottom: 144px;
-}
-
-.newslatter-form-container {
-  width: 1160px;
-  height: 57px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  margin: 0;
+  padding-top: 10px;
 }
 
 .newslatter-form {
   display: flex;
+  grid-column: 1 / -1;
 }
 
 .newslatter-field {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
-  width: 557px;
+  width: 545px;
   border: 0;
   background-color: #F0F0F0;
   border-bottom: 3px solid #C4C4C4;
@@ -687,8 +673,9 @@ body {
 }
 
 .newslatter-form-description {
-  width: 128px;
-  margin: auto 0;
+  max-width: 128px;
+  text-align: right;
+  margin-left: auto;
 }
 
 /* FOOTER */
