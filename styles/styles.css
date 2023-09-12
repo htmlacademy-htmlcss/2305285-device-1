@@ -358,7 +358,7 @@ body {
   margin: 0 auto;
 }
 
-.slider-pagination-item {
+.slider-pagination-button {
   width: 12px;
   height: 12px;
 }
@@ -449,14 +449,6 @@ body {
   padding-bottom: 72px;
 }
 
-.advantages-button-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 280px;
-  margin-right: 116px;
-}
-
 .advantages-button-item {
   width: 280px;
   margin-bottom: 35px;
@@ -468,6 +460,11 @@ body {
 }
 
 .advantages-button-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 280px;
+  margin-right: 116px;
   padding-top: 64px;
   padding-bottom: 64px;
   border-right: 7px solid #000;
