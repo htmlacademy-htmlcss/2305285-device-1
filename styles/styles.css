@@ -945,7 +945,6 @@ body {
 }
 
 .product-card-title-container {
-  margin-top: 32px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -971,19 +970,14 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 44px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 44px 40px;
 }
 
-.product-card {
-  width: 360px;
-  margin-bottom: 44px;
-}
-
-.product-card:nth-child(2n) {
-  margin-right: 0;
-  margin-bottom: 0;
+.product-card-image {
+  display: block;
+  margin-bottom: 32px;
 }
 
 .button-show-product {
