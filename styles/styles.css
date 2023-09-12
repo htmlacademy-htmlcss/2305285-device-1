@@ -534,6 +534,8 @@ body {
   margin-bottom: 70px;
   align-items: flex-start;
   padding-top: 47px;
+  flex-wrap: wrap;
+  row-gap: 50px;
 }
 
 .about {
