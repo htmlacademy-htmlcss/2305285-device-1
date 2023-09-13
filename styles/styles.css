@@ -382,14 +382,10 @@ body {
 
 .catalog-list {
   width: 1160px;
-  display: flex;
-  gap: 40px;
+  display: grid;
   margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-.catalog-item {
-  width: 160px;
+  grid-template-columns: repeat(6, 160px);
+  gap: 40px;
 }
 
 .catalog-description {
@@ -526,18 +522,12 @@ body {
 .about-contacts {
   width: 1160px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   margin-bottom: 70px;
   align-items: flex-start;
   padding-top: 47px;
-  flex-wrap: wrap;
-  row-gap: 50px;
-}
-
-.about {
-  width: 520px;
-  margin-right: 108px;
+  grid-template-columns: 520px 1fr;
+  gap: 50px 108px;
 }
 
 .about p {
@@ -574,10 +564,6 @@ body {
 }
 
 /* CONTACTS */
-
-.contacts {
-  width: 532px;
-}
 
 .contacts h2 {
   font-family: "Raleway", sans-serif;
@@ -634,8 +620,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 348px 1fr;
-  row-gap: 144px;
-  column-gap: 252px;
+  gap: 144px 252px;
 }
 
 .newslatter-title {
@@ -659,6 +644,8 @@ body {
 .newslatter-field {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
+  margin: 0;
+  padding: 0;
   width: 545px;
   border: 0;
   background-color: #F0F0F0;
@@ -670,6 +657,7 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: #F0F0F0;
   font-size: 18px;
+  margin: 0;
   padding: 18px 39px;
   border: 3px solid #C4C4C4;
 }
