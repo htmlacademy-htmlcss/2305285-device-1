@@ -300,7 +300,9 @@ body {
 }
 
 .slider-imagion {
+  display: block;
   width: 560px;
+  object-fit: contain;
 }
 
 .slider-description {
@@ -962,6 +964,7 @@ body {
 
 .product-card-image {
   display: block;
+  object-fit: contain;
   margin-bottom: 32px;
 }
 
