@@ -502,6 +502,7 @@ body {
 .delivery-service {
   width: 1160px;
   margin: 0 auto;
+  margin-bottom: 70px;
 }
 
 .delivery-service-button {
@@ -516,7 +517,6 @@ body {
   border: none;
   padding: 0;
   letter-spacing: 4px;
-  margin-bottom: 70px;
 }
 
 /* ABOUT */
