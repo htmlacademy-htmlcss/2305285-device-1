@@ -15,18 +15,43 @@
         </a>
         <div class="navigation-user-container">
           <div class="search-container">
+            <svg class="search-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16"
+              height="16" fill="none" viewBox="0 0 16 16">
+              <path fill="#000"
+                d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z" />
+            </svg>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
               <input class="navigation-field" type="text" name="search" placeholder="Поиск по сайту">
               <button class="search-button" type="submit">Найти</button>
             </form>
           </div>
           <div class="profile-container">
-            <a class="navigation-user-link visually-hidden" href="#">Войти</a>
+            <svg class="profile-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="13"
+              height="12" fill="none" viewBox="0 0 13 12">
+              <path fill="#000"
+                d="M0 12h13c-.2-2.6-2.1-4.8-4.7-5.5 1-.6 1.7-1.7 1.7-3C10 1.6 8.4 0 6.5 0S3 1.6 3 3.5c0 1.3.7 2.4 1.7 3C2.1 7.2.2 9.4 0 12Z" />
+            </svg>
             <a class="navigation-user-link active-profile" href="#">Коля Петухов</a>
             <a class="navigation-user-link active-profile profile-exit" href="#">Выйти</a>
           </div>
           <div class="tools-container">
+            <svg class="tools-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="10"
+              height="12" fill="none" viewBox="0 0 10 12">
+              <path fill="#000" d="M6 0H4v12h2V0ZM2 4H0v8h2V4ZM10 3H8v9h2V3Z" />
+            </svg>
             <a class="navigation-user-link" href="#">Сравнить</a>
+            <svg class="tools-icon basket" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+              width="16" height="14" fill="none" viewBox="0 0 16 14">
+              <g clip-path="url(#a)">
+                <path fill="#000"
+                  d="m15.3 5-3.5.2L8.6.3C8.5.1 8.2 0 8 0c-.2 0-.5.1-.6.3L4.2 5.2H.7c-.4 0-.7.3-.7.7v.2l1.9 6.8c.2.7.7 1.1 1.4 1.1h9.4c.7 0 1.2-.4 1.4-1.1L16 6v-.2c0-.4-.3-.8-.7-.8ZM8 1.9l2.2 3.2H5.9L8 1.9Z" />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M0 0h16v14H0z" />
+                </clipPath>
+              </defs>
+            </svg>
             <a class="navigation-user-link" href="#">Корзина</a>
           </div>
         </div>
@@ -35,6 +60,29 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="#">Каталог товаров</a>
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="50" height="50" fill="none" viewBox="0 0 50 50">
+                <circle cx="25" cy="25" r="24" stroke="#000" stroke-width="2" opacity=".3" />
+                <g clip-path="url(#a)" opacity=".3">
+                  <path fill="#000" d="M33 24h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M17 17h16v16H17z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <svg class="navigation-icon plus" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <g clip-path="url(#a)" opacity=".3">
+                  <path fill="#000" d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h16v16H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
               <ul class="navigation-sublist is-active">
                 <li class="navigation-subitem">
                   <ul class="list">
@@ -176,9 +224,17 @@
               </select>
               <div class="button-sort-container">
                 <a href="#" class="button-sort">
+                  <svg class="button-sort-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    width="12" height="10" fill="none" viewBox="0 0 12 10">
+                    <path fill="#000" d="m6 0 5.5 10H.5" />
+                  </svg>
                   <span class="visually-hidden">От меньшего к большему</span>
                 </a>
                 <a href="#" class="button-sort">
+                  <svg class="button-sort-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                    width="12" height="10" fill="none" viewBox="0 0 12 10">
+                    <path fill="#000" d="M6 10 .5 0h11" />
+                  </svg>
                   <span class="visually-hidden">От большего к меньшему</span>
                 </a>
               </div>
@@ -189,6 +245,12 @@
                 <li class="product-card">
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/product-1.jpg" alt="" width="360" height="380">
+                    <svg class="product-card-icon" aria-hidden="true" focusable="false"
+                      xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60">
+                      <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2" />
+                      <path fill="#000" fill-opacity=".6"
+                        d="M13.56 28.32V34h-2.3v-9.94h1.83l4.6 5.85v-5.85H20V34H18.1l-4.55-5.68Zm18.12 3.66V34h-6.99v-9.94h6.86v2.02h-4.56V28h3.92v1.86h-3.92v2.11h4.69Zm7.47-7.9h2.11l1.04 3.17 1.03-3.18h2.13l-1.7 4.62 1.02 2.65 2.49-7.28h2.5L45.9 34h-2l-1.6-3.9-1.6 3.9h-2l-3.86-9.94h2.49l2.5 7.28.98-2.65-1.66-4.62Z" />
+                    </svg>
                     <div class="product-card-title-container">
                       <h3 class="product-card-title">Любительская селфи-палка</h3>
                       <b class="product-card-price">500 ₽</b>
@@ -200,6 +262,12 @@
                 <li class="product-card">
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/product-2.jpg" alt="" width="360" height="380">
+                    <svg class="product-card-icon" aria-hidden="true" focusable="false"
+                      xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60">
+                      <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2" />
+                      <path fill="#000" fill-opacity=".6"
+                        d="M13.56 28.32V34h-2.3v-9.94h1.83l4.6 5.85v-5.85H20V34H18.1l-4.55-5.68Zm18.12 3.66V34h-6.99v-9.94h6.86v2.02h-4.56V28h3.92v1.86h-3.92v2.11h4.69Zm7.47-7.9h2.11l1.04 3.17 1.03-3.18h2.13l-1.7 4.62 1.02 2.65 2.49-7.28h2.5L45.9 34h-2l-1.6-3.9-1.6 3.9h-2l-3.86-9.94h2.49l2.5 7.28.98-2.65-1.66-4.62Z" />
+                    </svg>
                     <div class="product-card-title-container">
                       <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                       <b class="product-card-price">1500 ₽</b>
@@ -210,6 +278,12 @@
                 <li class="product-card">
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/product-3.jpg" alt="" width="360" height="380">
+                    <svg class="product-card-icon" aria-hidden="true" focusable="false"
+                      xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60">
+                      <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2" />
+                      <path fill="#000" fill-opacity=".6"
+                        d="M13.56 28.32V34h-2.3v-9.94h1.83l4.6 5.85v-5.85H20V34H18.1l-4.55-5.68Zm18.12 3.66V34h-6.99v-9.94h6.86v2.02h-4.56V28h3.92v1.86h-3.92v2.11h4.69Zm7.47-7.9h2.11l1.04 3.17 1.03-3.18h2.13l-1.7 4.62 1.02 2.65 2.49-7.28h2.5L45.9 34h-2l-1.6-3.9-1.6 3.9h-2l-3.86-9.94h2.49l2.5 7.28.98-2.65-1.66-4.62Z" />
+                    </svg>
                     <div class="product-card-title-container">
                       <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                       <b class="product-card-price">2500 ₽</b>
@@ -220,6 +294,12 @@
                 <li class="product-card">
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/product-4.jpg" alt="" width="360" height="380">
+                    <svg class="product-card-icon" aria-hidden="true" focusable="false"
+                      xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none" viewBox="0 0 60 60">
+                      <circle cx="30" cy="30" r="29" stroke="#000" stroke-opacity=".6" stroke-width="2" />
+                      <path fill="#000" fill-opacity=".6"
+                        d="M13.56 28.32V34h-2.3v-9.94h1.83l4.6 5.85v-5.85H20V34H18.1l-4.55-5.68Zm18.12 3.66V34h-6.99v-9.94h6.86v2.02h-4.56V28h3.92v1.86h-3.92v2.11h4.69Zm7.47-7.9h2.11l1.04 3.17 1.03-3.18h2.13l-1.7 4.62 1.02 2.65 2.49-7.28h2.5L45.9 34h-2l-1.6-3.9-1.6 3.9h-2l-3.86-9.94h2.49l2.5 7.28.98-2.65-1.66-4.62Z" />
+                    </svg>
                     <div class="product-card-title-container">
                       <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
                       <b class="product-card-price">1500 ₽</b>
