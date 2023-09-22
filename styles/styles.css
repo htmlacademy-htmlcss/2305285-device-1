@@ -214,16 +214,9 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: auto;
-  right: 0;
-  margin: auto 0;
-}
-
-.plus {
-  position: absolute;
-  top: 17px;
-  bottom: 17px;
   left: 260px;
+  right: auto;
+  margin: auto 0;
 }
 
 .navigation-item:nth-child(4n),
@@ -271,7 +264,6 @@ body {
 .navigation-sublist,
 .slider,
 .slider-pagination-list,
-.slider-pagination-item,
 .catalog-list,
 .advantages-list,
 .advantages-button-list,
@@ -449,11 +441,27 @@ body {
   border: 0;
 }
 
-.slider-pagination-button {
-  width: 12px;
-  height: 12px;
-  cursor: pointer;
+.slider-pagination-item {
+  line-height: 0;
 }
+
+.slider-pagination-button {
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  position: relative;
+}
+
+.slider-pagination-button-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
 
 /* CATALOG */
 
@@ -869,6 +877,7 @@ body {
 }
 
 .social-button-icon {
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -958,15 +967,6 @@ body {
   fill: #000000;
   opacity: 0.2;
 }
-
-/* .breadcrumbs-icon {
-  width: 4px;
-  height: 7px;
-  background-image: url("../images/breadcrumbs.svg");
-  background-size: 4px 7px;
-  background-repeat: no-repeat;
-  background-position: 7px 79px;
-} */
 
 .catalog-products {
   background-color: #F0F0F0;
