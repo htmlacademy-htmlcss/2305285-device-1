@@ -80,6 +80,22 @@ body {
   margin-bottom: 30px;
 }
 
+.navigation-logo:hover {
+  opacity: 0.6;
+}
+
+.navigation-logo:active {
+  opacity: 0.3;
+}
+
+.navigation-logo:focus {
+  outline: none;
+}
+
+.navigation-logo:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
 .navigation-user-container {
   width: 1040px;
   display: flex;
@@ -94,6 +110,26 @@ body {
   position: relative;
 }
 
+.navigation-field:active {
+  color: #000000;
+}
+
+.navigation-field:focus,
+.search-button:focus {
+  outline: none;
+}
+
+.navigation-field:focus-visible,
+.search-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.navigation-field:disabled,
+.search-button:disabled {
+  opacity: 0.3;
+}
+
 .search-icon {
   position: absolute;
   top: 0;
@@ -106,6 +142,7 @@ body {
 
 .search-form {
   display: flex;
+  margin-right: 26px;
 }
 
 .navigation-field {
@@ -126,11 +163,22 @@ body {
   border: 2px solid #000;
 }
 
+.search-button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.search-button:active {
+  background-color: #000000;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
 .profile-container {
   position: relative;
   width: 230px;
   display: flex;
-  justify-content: space-between;
+  margin-right: 26px;
 }
 
 .profile-icon {
@@ -145,9 +193,9 @@ body {
 
 .tools-container {
   position: relative;
-  width: 240px;
+  width: 105px;
   display: flex;
-  justify-content: space-between;
+  margin-right: 36px;
 }
 
 .tools-icon {
@@ -160,12 +208,42 @@ body {
   fill: #000000;
 }
 
-.basket {
-  left: 141px;
+.basket-container {
+  position: relative;
+}
+
+.basket-icon {
+  position: absolute;
+  top: 0;
+  right: 86px;
+  bottom: 0;
+  left: auto;
+  margin: auto;
 }
 
 .navigation-user-link {
   padding-left: 25px;
+}
+
+.profile-container:hover,
+.tools-container:hover,
+.basket-container:hover {
+  opacity: 0.6;
+}
+
+.profile-container:active,
+.tools-container:active,
+.basket-container:active {
+  opacity: 0.3;
+}
+
+.navigation-user-link:focus {
+  outline: none;
+}
+
+.navigation-user-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .navigation-field {
@@ -286,6 +364,23 @@ body {
 .profile-exit {
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
+.navigation-link:focus {
+  outline: none;
+}
+
+.navigation-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 /* MAIN */
