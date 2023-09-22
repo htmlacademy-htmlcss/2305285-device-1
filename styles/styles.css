@@ -295,6 +295,8 @@ body {
   left: 260px;
   right: auto;
   margin: auto 0;
+  fill: #000000;
+  opacity: 0.3;
 }
 
 .navigation-item:nth-child(4n),
@@ -366,19 +368,30 @@ body {
   text-decoration: none;
 }
 
-.navigation-link:hover {
+.navigation-link:hover,
+.navigation-sublink:hover,
+.navigation-link:hover .navigation-icon {
   opacity: 0.6;
 }
 
-.navigation-link:active {
+.navigation-link:active,
+.navigation-sublink:active,
+.navigation-link:active .navigation-icon {
   opacity: 0.3;
 }
 
-.navigation-link:focus {
+.navigation-link-catalog:hover,
+.navigation-link-catalog:active {
+  opacity: 1;
+}
+
+.navigation-link:focus,
+.navigation-sublink:focus {
   outline: none;
 }
 
-.navigation-link:focus-visible {
+.navigation-link:focus-visible,
+.navigation-sublink:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
