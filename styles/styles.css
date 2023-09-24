@@ -168,7 +168,7 @@ body {
   color: #FFFFFF;
 }
 
-.search-button:active {
+.search-button:active span {
   background-color: #000000;
   color: #FFFFFF;
   opacity: 0.3;
@@ -179,6 +179,10 @@ body {
   width: 230px;
   display: flex;
   margin-right: 26px;
+}
+
+.profile-exit {
+  opacity: 0.3;
 }
 
 .profile-icon {
@@ -375,12 +379,14 @@ body {
 }
 
 .navigation-link:active,
-.navigation-sublink:active,
-.navigation-link:active .navigation-icon {
+.navigation-sublink:active {
   opacity: 0.3;
 }
 
-.navigation-link-catalog:hover,
+.navigation-link-catalog:hover {
+  opacity: 1;
+}
+
 .navigation-link-catalog:active {
   opacity: 1;
 }
@@ -461,6 +467,28 @@ body {
   cursor: pointer;
   position: relative;
   border: 0;
+  background-color: transparent;
+}
+
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:active {
+  opacity: 0.3;
+}
+
+.slider-button:focus {
+  outline: none;
+}
+
+.slider-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.slider-button:disabled {
+  opacity: 0.1;
 }
 
 .slider-button-icon {
@@ -558,6 +586,29 @@ body {
   height: 13px;
   cursor: pointer;
   position: relative;
+  border: 0;
+  background-color: transparent;
+}
+
+.slider-pagination-button:hover {
+  opacity: 0.6;
+}
+
+.slider-pagination-button:active {
+  opacity: 0.3;
+}
+
+.slider-pagination-button:focus {
+  outline: none;
+}
+
+.slider-pagination-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.slider-pagination-button:disabled {
+  opacity: 0.1;
 }
 
 .slider-pagination-button-icon {
@@ -586,6 +637,23 @@ body {
   text-decoration: none;
   display: flex;
   flex-direction: column;
+}
+
+.catalog-button:hover .catalog-container {
+  background-color: #FFC700;
+}
+
+.catalog-button:active {
+  opacity: 0.3;
+}
+
+.catalog-button:focus {
+  outline: none;
+}
+
+.catalog-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .catalog-list {
@@ -689,6 +757,24 @@ body {
   padding-right: 120px;
 }
 
+.advantages-button-active:hover {
+  padding-left: 27px;
+}
+
+.advantages-button-active:active {
+  padding-left: 27px;
+}
+
+.advantages-button-active:focus {
+  opacity: none;
+}
+
+.advantages-button-active:focus-visible {
+  padding-left: 27px;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .advantages-item {
   display: flex;
   width: 730px;
@@ -709,16 +795,6 @@ body {
   width: 1160px;
   margin: 0 auto;
   margin-bottom: 70px;
-  position: relative;
-}
-
-.delivery-icon {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 39px;
-  right: auto;
-  margin: auto 0;
 }
 
 .delivery-service-button {
@@ -734,6 +810,39 @@ body {
   padding: 0;
   letter-spacing: 4px;
   cursor: pointer;
+  position: relative;
+}
+
+.delivery-service-container {
+  display: flex;
+  width: 125px;
+  height: 100px;
+  background-color: #FFE17F;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.delivery-service-button:hover .delivery-service-container {
+  background-color: #FFC700;
+}
+
+.delivery-service-button:active {
+  opacity: 0.3;
+}
+
+.delivery-service-button:focus {
+  outline: none;
+}
+
+.delivery-service-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 /* ABOUT */
@@ -891,6 +1000,30 @@ body {
   border: 3px solid #C4C4C4;
 }
 
+.newslatter-button:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.newslatter-button:active span {
+  background-color: #000000;
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.newslatter-button:focus {
+  outline: none;
+}
+
+.newslatter-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.newslatter-button:disabled {
+  opacity: 0.3;
+}
+
 .newslatter-form-description {
   display: flex;
   max-width: 128px;
@@ -923,6 +1056,23 @@ body {
   display: flex;
   width: 100%;
   margin-bottom: 35px;
+}
+
+.footer-logo:hover {
+  opacity: 0.6;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
+}
+
+.footer-logo:focus {
+  outline: none;
+}
+
+.footer-logo:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .footer-contacts {
@@ -1010,9 +1160,45 @@ body {
   margin-left: 60px;
 }
 
+.htmlacademy-logo:hover img {
+  color: #FFFFFF;
+}
+
+.htmlacademy-logo:active img {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.htmlacademy-logo:focus {
+  outline: none;
+}
+
+.htmlacademy-logo:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .footer-number-phone {
   color: #FFFFFF;
   background-color: #444444;
+}
+
+.footer-number-phone:hover {
+  color: #FFC700;
+}
+
+.footer-number-phone:active {
+  color: #FFC700;
+  opacity: 0.3;
+}
+
+.footer-number-phone:focus {
+  outline: none;
+}
+
+.footer-number-phone:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 /* КАТАЛОГ */
@@ -1063,6 +1249,23 @@ body {
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
+.breadcrumbs-link:focus {
+  outline: none;
+}
+
+.breadcrumbs-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .breadcrumbs-icon {
@@ -1162,6 +1365,24 @@ body {
   opacity: 0.2;
 }
 
+.button-sort:hover .button-sort-icon {
+  opacity: 0.5;
+}
+
+.button-sort:active .button-sort-icon {
+  opacity: 1;
+}
+
+.button-sort:focus .button-sort-icon {
+  outline: none;
+}
+
+.button-sort:focus-visible .button-sort-icon {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+
 .sorting-container {
   width: 840px;
   display: flex;
@@ -1176,6 +1397,7 @@ body {
   font-weight: 400;
   width: 140px;
   border: 0;
+  background-color: transparent;
 }
 
 .product-container {
@@ -1266,8 +1488,30 @@ body {
   margin-bottom: 44px;
 }
 
+.button-show-more:hover {
+  border-color: #000000;
+}
+
+.button-show-more:active {
+  border-color: #000000;
+  opacity: 0.3;
+}
+
+.button-show-more:focus {
+  outline: none;
+}
+
+.button-show-more:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.button-show-more:disabled {
+  opacity: 0.3;
+}
+
 .pagination-container {
-  background-color: #F0F0F0;
+  background-color: #EBEBEB;
   display: flex;
   justify-content: space-between;
   width: 760px;
@@ -1285,7 +1529,7 @@ body {
 .pagination-link {
   display: block;
   color: #444444;
-  background-color: #F0F0F0;
+  background-color: #EBEBEB;
   text-align: center;
   text-decoration: none;
   opacity: 0.3;
@@ -1300,12 +1544,27 @@ body {
   align-items: center;
 }
 
-.pagination-prev {
+.pagination-prev,
+.pagination-next {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  background-color: #EBEBEB;
+  text-transform: uppercase;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  opacity: 1;
+}
+
+.pagination-disabled {
   display: flex;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   color: #444444;
-  background-color: #F0F0F0;
+  background-color: #EBEBEB;
   text-transform: uppercase;
   opacity: 0.3;
   justify-content: center;
@@ -1313,18 +1572,42 @@ body {
   padding: 25px;
 }
 
-.pagination-next {
-  display: flex;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  color: #000000;
-  background-color: #F0F0F0;
-  text-transform: uppercase;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-  padding: 25px;
+.pagination-prev:hover,
+.pagination-next:hover {
+  background-color: #DCDCDC;
+}
+
+.pagination-prev:active span,
+.pagination-next:active span {
+  opacity: 0.3;
+}
+
+.pagination-prev:focus,
+.pagination-next:focus {
+  outline: none;
+}
+
+.pagination-prev:focus-visible,
+.pagination-next:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-color: 2px;
+}
+
+.pagination-number:hover {
   opacity: 1;
+}
+
+.pagination-number:active {
+  opacity: 0.1;
+}
+
+.pagination-number:focus {
+  outline: none;
+}
+
+.pagination-number:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .pagination-current {
