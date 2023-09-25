@@ -268,35 +268,6 @@ input::placeholder {
   outline-offset: 2px;
 }
 
-.navigation-link {
-  letter-spacing: 3.6px;
-  align-items: center;
-  line-height: normal;
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
-.navigation-link-catalog {
-  display: block;
-  width: 239px;
-  position: relative;
-}
-
-.navigation-link-catalog::after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 243px;
-  top: 0;
-  margin: auto 0;
-  width: 48px;
-  height: 48px;
-  border: 2px solid #000000;
-  opacity: 0.3;
-  background-color: transparent;
-  border-radius: 50%;
-}
-
 .navigation-list {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -304,12 +275,14 @@ input::placeholder {
   background-color: #FFE17F;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 3.6px;
+  line-height: normal;
   list-style: none;
   width: 1040px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -321,15 +294,55 @@ input::placeholder {
 .navigation-item:first-child {
   width: 293px;
   margin-right: 276px;
+  align-items: center;
+}
+
+.navigation-catalog {
+  width: 293px;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 0;
+  background: transparent;
+  position: relative;
+}
+
+.navigation-catalog-description {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  background-color: #FFE17F;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  line-height: normal;
+  list-style: none;
+  width: 236px;
+}
+
+.navigation-catalog::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: auto 0;
+  width: 49px;
+  height: 49px;
+  border: 2px solid #000000;
+  opacity: 0.3;
+  background-color: transparent;
+  border-radius: 50%;
 }
 
 .navigation-icon {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 260px;
-  right: auto;
-  margin: auto 0;
+  width: 16px;
+  height: 16px;
+  top: 16px;
+  right: 16px;
   fill: #000000;
   opacity: 0.3;
 }
@@ -350,7 +363,6 @@ input::placeholder {
   text-transform: none;
   list-style: none;
   display: none;
-  flex-wrap: wrap;
   width: 675px;
 }
 
@@ -404,8 +416,7 @@ input::placeholder {
 }
 
 .navigation-link:hover,
-.navigation-sublink:hover,
-.navigation-link:hover .navigation-icon {
+.navigation-sublink:hover {
   opacity: 0.6;
 }
 
@@ -414,32 +425,31 @@ input::placeholder {
   opacity: 0.3;
 }
 
-.navigation-link-catalog:hover,
-.navigation-link-catalog:hover::after {
+.navigation-catalog:hover .navigation-icon,
+.navigation-catalog:hover::after {
   opacity: 1;
 }
 
-.navigation-link-catalog:active,
-.navigation-link-catalog:active::after {
+.navigation-catalog:hover .navigation-icon,
+.navigation-catalog:hover::after {
   opacity: 1;
 }
 
 .navigation-link:focus,
-.navigation-link-catalog:focus,
-.navigation-sublink:focus {
-  outline: none;
+.navigation-sublink:focus,
+.navigation-catalog:focus,
+{
+outline: none;
 }
 
 .navigation-link:focus-visible,
 .navigation-sublink:focus-visible {
-  padding: 0;
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
 
-.navigation-link-catalog:focus-visible {
-  outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
+.navigation-catalog:focus-visible {
+  box-shadow: inset 2px solid #AF4FFF;
 }
 
 /* MAIN */
