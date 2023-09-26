@@ -94,6 +94,7 @@ body {
 
 .navigation-logo:focus-visible {
   outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .navigation-user-container {
@@ -1268,11 +1269,13 @@ input::placeholder {
   opacity: 0.3;
 }
 
-.newslatter-button:focus {
+.newslatter-button:focus,
+.newslatter-field:focus {
   outline: none;
 }
 
-.newslatter-button:focus-visible {
+.newslatter-button:focus-visible,
+.newslatter-field:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
