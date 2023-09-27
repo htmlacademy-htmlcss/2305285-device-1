@@ -143,14 +143,13 @@ input::placeholder {
 
 .navigation-field:active {
   color: #000000;
-  outline: none;
 }
 
 .navigation-field:focus {
   outline: none;
 }
 
-.navigation-field:focus-visible {
+.navigation-field:focus-visible:not(:focus) {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -382,15 +381,10 @@ input::placeholder {
   background-color: #FFE17F;
   text-decoration: none;
   text-transform: none;
-  list-style: none;
   display: none;
-  width: 675px;
-}
-
-.navigation-sublist .is-active {
-  display: flex;
-  width: 675px;
-  justify-content: space-between;
+  letter-spacing: normal;
+  position: absolute;
+  z-index: 1;
 }
 
 .navigation-subitem {
@@ -451,9 +445,32 @@ input::placeholder {
   opacity: 1;
 }
 
-/* .navigation-catalog:hover .is-active {
+.navigation-catalog:hover + .navigation-sublist {
   display: block;
-} */
+  width: 1160px;
+  min-height: 180px;
+  margin-left: -60px;
+  padding-left: 60px;
+  z-index: 150;
+}
+
+.navigation-catalog:active + .navigation-sublist {
+  display: block;
+  width: 1160px;
+  min-height: 180px;
+  margin-left: -60px;
+  padding-left: 60px;
+  z-index: 150;
+}
+
+.navigation-catalog:focus + .navigation-sublist {
+  display: block;
+  width: 1160px;
+  min-height: 180px;
+  margin-left: -60px;
+  padding-left: 60px;
+  z-index: 150;
+}
 
 .navigation-link:focus,
 .navigation-sublink:focus,
@@ -701,6 +718,25 @@ input::placeholder {
   background-color: transparent;
 }
 
+.slider-pagination-button-active::before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.slider-pagination-button::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: transparent;
+  border: 3px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+}
+
 .slider-pagination-button:hover {
   opacity: 0.6;
 }
@@ -722,7 +758,7 @@ input::placeholder {
   opacity: 0.1;
 }
 
-.slider-pagination-button-icon {
+/* .slider-pagination-button-icon {
   position: absolute;
   top: 0;
   right: 0;
@@ -730,7 +766,7 @@ input::placeholder {
   left: 0;
   margin: auto;
   fill: #000000;
-}
+} */
 
 
 /* CATALOG */
@@ -968,43 +1004,55 @@ input::placeholder {
   position: relative;
 }
 
-/* .delivery-service-button::after {
-  content: "i";
-  display: flex;
-  width: 40px;
-  height: 40px;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.3);
-  background-color: rgba(220, 220, 220, 0.5);
-  border-radius: 50%;
+.delivery-icon-car {
   position: absolute;
-  top: 0;
-  right: 0;
-} */
+  top: 35px;
+  left: 39px;
+}
 
-.delivery-service-container {
-  display: flex;
+.delivery-icon-inform {
+  position: absolute;
+  top: 44px;
+  right: 62px;
+  opacity: 0.3;
+}
+
+.delivery-service-button::before {
+  content: "";
   width: 125px;
   height: 100px;
   background-color: #FFE17F;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
 }
 
-.delivery-service-button:hover .delivery-service-container {
+.delivery-service-button::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #DCDCDC;
+  opacity: 0.5;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  right: 43px;
+}
+
+.delivery-service-button:hover::before {
   background-color: #FFC700;
+}
+
+.delivery-service-button:hover .delivery-icon-inform {
+  opacity: 1;
 }
 
 .delivery-service-button:active {
   opacity: 0.3;
+}
+
+.delivery-service-button:active .delivery-icon-inform {
+  opacity: 1;
 }
 
 .delivery-service-button:focus {
@@ -1275,7 +1323,7 @@ input::placeholder {
 }
 
 .newslatter-button:focus-visible,
-.newslatter-field:focus-visible {
+.newslatter-field:focus-visible:not(:focus) {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -1482,7 +1530,7 @@ input::placeholder {
   bottom: 0;
   left: 0;
   margin: 0;
-  fill: #FFC700;
+  color: #FFC700;
 }
 
 .htmlacademy-logo:hover .htmlacademy-logo-icon {
@@ -1490,7 +1538,7 @@ input::placeholder {
 }
 
 .htmlacademy-logo:active .htmlacademy-logo-icon {
-  fill: #FFFFFF;
+  color: #FFFFFF;
   opacity: 0.3;
 }
 
@@ -1527,6 +1575,13 @@ input::placeholder {
 }
 
 /* КАТАЛОГ */
+
+/* .navigation-link[href]::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+} */
 
 .main-inner {
   font-size: 16px;
@@ -1805,6 +1860,40 @@ input::placeholder {
   position: relative;
 }
 
+.new {
+  display: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  position: relative;
+}
+
+.new::before {
+  content: "new";
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  opacity: 0.6;
+  position: absolute;
+  top: 27px;
+  right: 27px;
+}
+
 .product-card-icon {
   position: absolute;
   top: 27px;
@@ -1857,7 +1946,7 @@ input::placeholder {
 }
 
 .button-show-product {
-  display: block;
+  display: none;
   letter-spacing: 3.6px;
   width: 220px;
   position: absolute;
@@ -1880,18 +1969,29 @@ input::placeholder {
   z-index: -1;
 }
 
-.product-card-link:hover .product-card-image {
+.product-card-link:hover .product-card-image,
+.new:hover::before {
   opacity: 0.3;
 }
 
-.product-card-link:hover .product-card-title {
+.product-card-link:hover .product-card-title,
+.product-card-link:hover .product-card-price {
   opacity: 0.6;
+}
+
+.product-card-link:hover + .button-show-product {
+  display: block;
 }
 
 .product-card-link:active .product-card-image,
 .product-card-link:active .product-card-price,
-.product-card-link:active .product-card-title {
+.product-card-link:active .product-card-title,
+.new:active::before {
   opacity: 0.3;
+}
+
+.product-card-link:active + .button-show-product {
+  display: block;
 }
 
 .product-card-link:focus {
@@ -1902,8 +2002,6 @@ input::placeholder {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
-
-
 
 .button-show-more {
   font-family: "Raleway", sans-serif;
