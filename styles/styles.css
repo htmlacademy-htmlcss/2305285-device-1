@@ -446,29 +446,32 @@ input::placeholder {
 }
 
 .navigation-catalog:hover + .navigation-sublist {
-  display: block;
+  display: flex;
   width: 1160px;
   min-height: 180px;
   margin-left: -60px;
   padding-left: 60px;
+  padding-top: 14px;
   z-index: 150;
 }
 
 .navigation-catalog:active + .navigation-sublist {
-  display: block;
+  display: flex;
   width: 1160px;
   min-height: 180px;
   margin-left: -60px;
   padding-left: 60px;
+  padding-top: 14px;
   z-index: 150;
 }
 
 .navigation-catalog:focus + .navigation-sublist {
-  display: block;
+  display: flex;
   width: 1160px;
   min-height: 180px;
   margin-left: -60px;
   padding-left: 60px;
+  padding-top: 14px;
   z-index: 150;
 }
 
@@ -757,17 +760,6 @@ input::placeholder {
 .slider-pagination-button:hover:disabled {
   opacity: 0.1;
 }
-
-/* .slider-pagination-button-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #000000;
-} */
-
 
 /* CATALOG */
 
@@ -1309,11 +1301,13 @@ input::placeholder {
 .newslatter-button:hover {
   background-color: #000000;
   color: #FFFFFF;
+  border-color: #000000;
 }
 
 .newslatter-button:active span {
   background-color: #000000;
   color: #FFFFFF;
+  border-color: #000000;
   opacity: 0.3;
 }
 
@@ -1617,9 +1611,11 @@ input::placeholder {
   padding: 0;
 }
 
-.breadcrumbs-item {
+.breadcrumbs-item:not(:last-child) {
   padding-right: 36px;
-  position: relative;
+  background-image: url(../images/breadcrumbs.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
 }
 
 .breadcrumbs:last-child {
@@ -1646,17 +1642,6 @@ input::placeholder {
 .breadcrumbs-link:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
-}
-
-.breadcrumbs-icon {
-  position: absolute;
-  top: 0;
-  left: auto;
-  right: 16px;
-  bottom: 0;
-  margin: auto 0;
-  fill: #000000;
-  opacity: 0.2;
 }
 
 .catalog-products {
@@ -1742,6 +1727,20 @@ input::placeholder {
   width: 20px;
   height: 20px;
 }
+
+/* .control-input[type="checkbox"] {
+  appearance: none;
+}
+
+.control-input[type="checkbox"]::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 3px;
+} */
 
 .button-show {
   width: 220px;
@@ -1843,6 +1842,33 @@ input::placeholder {
   width: 140px;
   border: 0;
   background-color: transparent;
+  appearance: none;
+  background-image: url(../images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right 11px center;
+  cursor: pointer;
+  padding-right: 30px;
+}
+
+.select-control:hover {
+  opacity: 0.6;
+}
+
+.select-control:active {
+  opacity: 0.3;
+}
+
+.select-control:focus {
+  outline: none;
+}
+
+.select-control:focus-visible:not(:focus) {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.select-control:disabled {
+  opacity: 0.1;
 }
 
 .product-container {
