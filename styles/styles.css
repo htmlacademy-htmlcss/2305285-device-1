@@ -1720,27 +1720,63 @@ input::placeholder {
 
 .control {
   display: flex;
+  gap: 16px;
 }
 
 .control-input {
   margin: 0;
   width: 20px;
   height: 20px;
+  color: #CCCCCC;
 }
 
-/* .control-input[type="checkbox"] {
+.control-input[type="checkbox"] {
   appearance: none;
+  border: 2px solid #CCCCCC;
+  border-radius: 3px;
 }
 
-.control-input[type="checkbox"]::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
+.control-input:checked {
+  background-image: url(../images/check-mark-filter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   border: 2px solid #000000;
   border-radius: 3px;
-} */
+}
+
+.control-input[type="radio"] {
+  appearance: none;
+  border: 2px solid #CCCCCC;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked {
+  background-image: url(../images/checked-radio.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #000000;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control:active {
+  opacity: 0.3;
+}
+
+.control:disabled {
+  opacity: 0.1;
+}
+
+.control-input:focus {
+  outline: none;
+}
+
+.control-input:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
 
 .button-show {
   width: 220px;
