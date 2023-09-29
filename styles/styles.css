@@ -80,19 +80,19 @@ body {
   margin-bottom: 30px;
 }
 
-.navigation-logo:hover {
+.navigation-logo[href]:hover {
   opacity: 0.6;
 }
 
-.navigation-logo:active {
+.navigation-logo[href]:active {
   opacity: 0.3;
 }
 
-.navigation-logo:focus {
+.navigation-logo[href]:focus {
   outline: none;
 }
 
-.navigation-logo:focus-visible {
+.navigation-logo[href]:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -100,7 +100,6 @@ body {
 .navigation-user-container {
   width: 1040px;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 30px;
   align-items: center;
 }
@@ -112,14 +111,13 @@ body {
   margin-right: 26px;
 }
 
-.search-icon {
+.search-form::before {
+  content: url(../images/search.svg);
   position: absolute;
-  top: 0;
-  right: auto;
-  bottom: 0;
-  left: 16px;
-  margin: auto;
-  fill: #000000;
+  width: 16px;
+  height: 16px;
+  top: 8px;
+  left: 20px;
 }
 
 .navigation-field {
@@ -154,8 +152,9 @@ input::placeholder {
   outline-offset: 2px;
 }
 
-.navigation-field:hover:disabled {
+.navigation-field:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .search-button {
@@ -188,14 +187,14 @@ input::placeholder {
   outline-offset: 2px;
 }
 
-.search-button:hover:disabled {
+.search-button:disabled {
   opacity: 0.3;
 }
 
 .profile-container {
-  position: relative;
   width: 230px;
   display: flex;
+  gap: 26px;
   margin-right: 26px;
 }
 
@@ -203,44 +202,14 @@ input::placeholder {
   opacity: 0.3;
 }
 
-.profile-icon {
-  position: absolute;
-  top: 0;
-  right: auto;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  fill: #000000;
-}
-
 .tools-container {
-  position: relative;
   width: 105px;
   display: flex;
   margin-right: 36px;
 }
 
-.tools-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto 0;
-  fill: #000000;
-}
-
 .basket-container {
   position: relative;
-}
-
-.basket-icon {
-  position: absolute;
-  top: 0;
-  right: 86px;
-  bottom: 0;
-  left: auto;
-  margin: auto;
 }
 
 .basket-container::before {
@@ -258,22 +227,35 @@ input::placeholder {
   top: 0;
   left: 0;
   margin-top: 5px;
-  margin-left: -18px;
+  margin-left: -16px;
   z-index: 10;
 }
 
 .navigation-user-link {
-  padding-left: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.profile-container:hover,
-.tools-container:hover,
+.login::before {
+  content: url(../images/user.svg);
+}
+
+.compare::before {
+  content: url(../images/сompare.svg);
+}
+
+.basket::before {
+  content: url(../images/basket.svg);
+}
+
+.navigation-user-link:hover,
 .basket-container:hover {
   opacity: 0.6;
 }
 
-.profile-container:active,
-.tools-container:active,
+.navigation-user-link:active,
 .basket-container:active {
   opacity: 0.3;
 }
@@ -424,19 +406,19 @@ input::placeholder {
 
 .navigation-user-link,
 .navigation-link,
-.navigation-sublink,
+.navigation-sublink[href],
 .profile-exit {
   color: #000000;
   text-decoration: none;
 }
 
 .navigation-link:hover,
-.navigation-sublink:hover {
+.navigation-sublink[href]:hover {
   opacity: 0.6;
 }
 
 .navigation-link:active,
-.navigation-sublink:active {
+.navigation-sublink[href]:active {
   opacity: 0.3;
 }
 
@@ -476,13 +458,13 @@ input::placeholder {
 }
 
 .navigation-link:focus,
-.navigation-sublink:focus,
+.navigation-sublink[href]:focus,
 .navigation-catalog:focus {
   outline: none;
 }
 
 .navigation-link:focus-visible,
-.navigation-sublink:focus-visible {
+.navigation-sublink[href]:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -1322,8 +1304,10 @@ input::placeholder {
   outline-offset: 2px;
 }
 
-.newslatter-button:hover:disabled {
+.newslatter-button:disabled,
+.newslatter-field:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .newslatter-form-description {
@@ -1360,19 +1344,19 @@ input::placeholder {
   margin-bottom: 35px;
 }
 
-.footer-logo:hover {
+.footer-logo-link[href]:hover {
   opacity: 0.6;
 }
 
-.footer-logo:active {
+.footer-logo-link[href]:active {
   opacity: 0.3;
 }
 
-.footer-logo:focus {
+.footer-logo-link[href]:focus {
   outline: none;
 }
 
-.footer-logo:focus-visible {
+.footer-logo-link[href]:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
@@ -1569,13 +1553,6 @@ input::placeholder {
 }
 
 /* КАТАЛОГ */
-
-/* .navigation-link[href]::after {
-  content: "";
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-} */
 
 .main-inner {
   font-size: 16px;
