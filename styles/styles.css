@@ -74,6 +74,10 @@ body {
   padding-left: 60px;
 }
 
+.catalog-page {
+  padding-bottom: 20px;
+}
+
 .navigation-logo {
   width: 145px;
   display: block;
@@ -404,6 +408,12 @@ input::placeholder {
   text-decoration: none;
 }
 
+.navigation-link.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
 .navigation-link:hover,
 .navigation-sublink[href]:hover {
   opacity: 0.6;
@@ -419,7 +429,7 @@ input::placeholder {
   opacity: 1;
 }
 
-.navigation-catalog:hover ~ .navigation-sublist {
+.navigation-item:hover .navigation-sublist {
   display: flex;
   width: 1160px;
   min-height: 180px;
@@ -429,7 +439,7 @@ input::placeholder {
   z-index: 150;
 }
 
-.navigation-catalog:active ~ .navigation-sublist {
+.navigation-item:active .navigation-sublist {
   display: flex;
   width: 1160px;
   min-height: 180px;
@@ -439,7 +449,7 @@ input::placeholder {
   z-index: 150;
 }
 
-.navigation-catalog:focus ~ .navigation-sublist {
+.navigation-item:focus .navigation-sublist {
   display: flex;
   width: 1160px;
   min-height: 180px;
@@ -1301,6 +1311,10 @@ input::placeholder {
   pointer-events: none;
 }
 
+.newslatter-field:invalid {
+  border-color: #FF3D3D;
+}
+
 .newslatter-form-description {
   display: flex;
   width: 160px;
@@ -1436,38 +1450,39 @@ input::placeholder {
 }
 
 .social-button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-}
-
-.social-button-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #444444;
-}
-
-.social-button::before {
-  display: block;
-  content: "";
-  width: 40px;
-  height: 40px;
   background-color: rgba(255, 255, 255, 0.3);
+  height: 40px;
   border-radius: 50%;
 }
 
-.social-button:hover::before {
+.telegram::before {
+  content: url(../images/telegram.svg);
+}
+
+.youtube::before {
+  content: url(../images/youtube.svg);
+}
+
+.twitter::before {
+  content: url(../images/twitter.svg);
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+
+.social-button:hover {
   background-color: #FFC700;
 }
 
-.social-button:active .social-button-icon {
+.social-button:active::before {
   opacity: 0.3;
 }
 
-.social-button:active::before {
+.social-button:active {
   background-color: #FFC700;
 }
 
@@ -1799,44 +1814,44 @@ input::placeholder {
 .button-sort-container {
   display: flex;
   width: 60px;
-  background-color: #FFFFFF;
 }
 
 .button-sort {
   display: block;
   width: 30px;
   height: 30px;
-  color: #000000;
-  background-color: #F0F0F0;
+  background-color: transparent;
   text-decoration: none;
-  position: relative;
 }
 
-.button-sort-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+.more {
+  background-image: url(../images/more.svg);
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 0.2;
 }
 
-.button-sort:hover .button-sort-icon {
+.less {
+  background-image: url(../images/less.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.button-sort:hover {
   opacity: 0.5;
 }
 
-.button-sort:active .button-sort-icon {
+.button-sort:active {
   opacity: 1;
 }
 
-.button-sort:focus .button-sort-icon {
+.button-sort:focus {
   outline: none;
 }
 
-.button-sort:focus-visible .button-sort-icon {
+.button-sort:focus-visible {
   outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
 }
 
 .sorting-container {
@@ -1898,49 +1913,6 @@ input::placeholder {
   position: relative;
 }
 
-.new {
-  display: none;
-  font-size: 18px;
-  font-weight: 700;
-  color: #000000;
-  background-color: #FFFFFF;
-  text-decoration: none;
-  position: relative;
-}
-
-.new::before {
-  content: "new";
-  display: flex;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  width: 60px;
-  height: 60px;
-  background-color: transparent;
-  border-radius: 50%;
-  border: 2px solid #000000;
-  opacity: 0.6;
-  position: absolute;
-  top: 27px;
-  right: 27px;
-}
-
-.product-card-icon {
-  position: absolute;
-  top: 27px;
-  left: 273px;
-  right: auto;
-  bottom: auto;
-  margin: 0;
-}
-
 .product-card-title-container {
   display: flex;
   flex-wrap: nowrap;
@@ -1983,6 +1955,32 @@ input::placeholder {
   z-index: 1;
 }
 
+.product-card.new::before {
+  content: "NEW";
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  opacity: 0.6;
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  z-index: 2;
+}
+
 .button-show-product {
   display: none;
   letter-spacing: 3.6px;
@@ -2005,31 +2003,47 @@ input::placeholder {
   top: 16px;
   margin: auto;
   z-index: -1;
+  transition: all 0.5s ease;
 }
 
-.product-card-link:hover .product-card-image,
+.button-show-product:hover::after {
+  top: 0;
+  height: 100%;
+  background-color: #FFE17F;
+}
+
+.button-show-product:active::after {
+  background-color: #FFCC33;
+}
+
+.button-show-product:focus {
+  outline: none;
+}
+
+.button-show-product:focus-visible {
+  outline: 2px solid #AF4FFF;
+}
+
+.product-card:hover .product-card-image,
 .new:hover::before {
   opacity: 0.3;
 }
 
-.product-card-link:hover .product-card-title,
-.product-card-link:hover .product-card-price {
+.product-card:hover .product-card-title,
+.product-card:hover .product-card-price {
   opacity: 0.6;
 }
 
-.product-card-link:hover + .button-show-product {
+.product-card-link:focus-within ~ .button-show-product,
+.product-card:hover .button-show-product {
   display: block;
 }
 
-.product-card-link:active .product-card-image,
-.product-card-link:active .product-card-price,
-.product-card-link:active .product-card-title,
+.product-card:active .product-card-image,
+.product-card:active .product-card-price,
+.product-card:active .product-card-title,
 .new:active::before {
   opacity: 0.3;
-}
-
-.product-card-link:active + .button-show-product {
-  display: block;
 }
 
 .product-card-link:focus {
@@ -2082,6 +2096,7 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   width: 760px;
+  user-select: none;
 }
 
 .pagination {
@@ -2137,6 +2152,7 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   padding: 25px;
+  pointer-events: none;
 }
 
 .pagination-prev:hover,
@@ -2179,4 +2195,5 @@ input::placeholder {
 
 .pagination-current {
   opacity: 0.6;
+  pointer-events: none;
 }
