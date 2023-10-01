@@ -459,6 +459,16 @@ input::placeholder {
   z-index: 150;
 }
 
+.navigation-item:focus-within .navigation-sublist {
+  display: flex;
+  width: 1160px;
+  min-height: 180px;
+  margin-left: -60px;
+  padding-left: 60px;
+  padding-top: 14px;
+  z-index: 150;
+}
+
 .navigation-link:focus,
 .navigation-sublink[href]:focus,
 .navigation-catalog:focus {
@@ -532,10 +542,16 @@ input::placeholder {
 
 .slider-prev::before {
   content: url(../images/arrow-left.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .slider-next::before {
   content: url(../images/arrow-right.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .slider-button:hover {
