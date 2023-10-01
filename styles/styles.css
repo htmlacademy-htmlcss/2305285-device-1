@@ -710,6 +710,7 @@ input::placeholder {
   width: 76px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 auto;
   border: 0;
 }
@@ -719,6 +720,7 @@ input::placeholder {
 }
 
 .slider-pagination-button {
+  margin: 0;
   padding: 0;
   width: 13px;
   height: 13px;
