@@ -212,7 +212,7 @@ input::placeholder {
 }
 
 .profile-container {
-  width: 230px;
+  width: 235px;
   display: flex;
   gap: 26px;
   margin-right: 26px;
@@ -247,7 +247,7 @@ input::placeholder {
   padding: 0;
 }
 
-.basket-container::before {
+.basket-button::after {
   content: "2";
   font-size: 14px;
   display: flex;
@@ -261,9 +261,8 @@ input::placeholder {
   border-radius: 50%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -15px;
   margin-top: 5px;
-  margin-left: -16px;
   z-index: 10;
 }
 
@@ -296,9 +295,9 @@ input::placeholder {
   color: #FFFFFF;
 }
 
-.popover-open {
+/* .popover-open {
   display: block;
-}
+} */
 
 .popover::before {
   content: "";
@@ -343,24 +342,59 @@ input::placeholder {
   line-height: 20px;
 }
 
+.popover-item-link:hover {
+  opacity: 0.6;
+}
+
+.popover-item-link:active {
+  opacity: 0.3;
+}
+
+.popover-item-link:focus {
+  outline: none;
+}
+
+.popover-item-link:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .popover-item-button {
   display: block;
   width: 10px;
   height: 10px;
   padding: 0;
   margin: 0;
+  line-height: 0;
   position: relative;
   background-color: #000000;
   border: none;
+  cursor: pointer;
 }
 
 .popover-item-button::after {
   content: url(../images/close-popover.svg);
   position: absolute;
-  width: 10px;
-  height: 10px;
   top: 0;
   left: 0;
+}
+
+.popover-item-button:hover::after {
+  opacity: 0.6;
+}
+
+.popover-item-button:active::after {
+  opacity: 0.6;
+}
+
+.popover-item-button:focus,
+.popover-item-button:focus::after {
+  outline: none;
+}
+
+.popover-item-button:focus-visible::after {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .popover-item-image {
@@ -404,13 +438,34 @@ input::placeholder {
   padding: 14px 25px;
 }
 
+.popover-open-cart-button:hover {
+  background: #FFE17F;
+}
+
+.popover-open-cart-button:active span {
+  opacity: 0.3;
+}
+
+.popover-open-cart-button:focus {
+  outline: none;
+}
+
+.popover-open-cart-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
+.popover-open-cart-button:disabled span {
+  opacity: 0.3;
+}
+
 .navigation-user-link:hover,
-.basket-container:hover {
+.basket-button:hover {
   opacity: 0.6;
 }
 
 .navigation-user-link:active,
-.basket-container:active {
+.basket-button:active {
   opacity: 0.3;
 }
 
