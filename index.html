@@ -27,7 +27,47 @@
             <a class="navigation-user-link compare" href="#">Сравнить</a>
           </div>
           <div class="basket-container">
-            <a class="navigation-user-link basket" href="#">Корзина</a>
+            <button class="basket-button basket" type="button">
+              <p class="basket-button-description">Корзина</p>
+            </button>
+            <div class="popover popover-cart popover-open ">
+              <div class="popover-content">
+                <h2 class="popover-title visually-hidden">Корзина</h2>
+                <ul class="popover-list">
+                  <li class="popover-item">
+                    <a class="popover-item-link" href="#">
+                      <img class="popover-item-image" src="images/product-1-small.jpg" alt="" width="39" height="43">
+                      <h3 class="popover-item-title">Любительсткая селфи-палка</h3>
+                    </a>
+                    <button type="button" class="popover-item-button">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-item-link" href="#">
+                      <img class="popover-item-image" src="images/product-2-small.jpg" alt="" width="39" height="43">
+                      <h3 class="popover-item-title">Профессиональная селфи-палка</h3>
+                    </a>
+                    <button type="button" class="popover-item-button">
+                      <span class="visually-hidden">Удалить из корзины</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="popover-cart-total">
+                  <ol class="popover-cart-total-list">
+                    <li class="popover-cart-total-item">
+                      <h3 class="popover-cart-total-title">Товаров: 2</h3>
+                    </li>
+                    <li class="popover-cart-total-item">
+                      <h3 class="popover-cart-total-title right">Cумма: 2000 ₽</h3>
+                    </li>
+                  </ol>
+                </div>
+                <div class="popover-open-cart">
+                  <a class="button popover-open-cart-button " href="#">Открыть корзину</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -35,7 +75,7 @@
           <ul class="navigation-list">
             <li class="navigation-item">
               <button class="navigation-catalog" type="button">
-                <p class="navigation-catalog-description" href="#">Каталог товаров</p>
+                <p class="navigation-catalog-description">Каталог товаров</p>
               </button>
 
               <ul class="navigation-sublist is-active">

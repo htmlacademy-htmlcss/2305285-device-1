@@ -58,6 +58,21 @@ body {
   overflow: hidden;
 }
 
+.button {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  line-height: normal;
+  text-transform: uppercase;
+  letter-spacing: 3.6px;
+  cursor: pointer;
+  user-select: none;
+}
+
 /* HEADER */
 
 .page-header {
@@ -208,7 +223,7 @@ input::placeholder {
 }
 
 .tools-container {
-  width: 105px;
+  width: 110px;
   display: flex;
   margin-right: 36px;
 }
@@ -217,8 +232,24 @@ input::placeholder {
   position: relative;
 }
 
+.basket-button {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.basket-button-description {
+  margin: 0;
+  padding: 0;
+}
+
 .basket-container::before {
   content: "2";
+  font-size: 14px;
   display: flex;
   width: 21px;
   height: 21px;
@@ -236,23 +267,141 @@ input::placeholder {
   z-index: 10;
 }
 
-.navigation-user-link {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
 .login::before {
   content: url(../images/user.svg);
+  margin-right: 12px;
 }
 
 .compare::before {
   content: url(../images/сompare.svg);
+  margin-right: 12px;
 }
 
 .basket::before {
   content: url(../images/basket.svg);
+  margin-right: 12px;
+}
+
+.popover {
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: -135px;
+  z-index: 50;
+  width: 320px;
+  min-height: 90px;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.popover-open {
+  display: block;
+}
+
+.popover::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  transform: rotate(45deg);
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  margin-left: -7px;
+}
+
+.popover-content {
+  width: 100%;
+  font-size: 16px;
+}
+
+.popover-item {
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.popover-item:not(:last-child) {
+  padding-bottom: 20px;
+}
+
+.popover-item-link {
+  display: flex;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.popover-item-title {
+  font: inherit;
+  padding: 0;
+  margin: 0;
+  width: 155px;
+  line-height: 20px;
+}
+
+.popover-item-button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: #000000;
+  border: none;
+}
+
+.popover-item-button::after {
+  content: url(../images/close-popover.svg);
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 0;
+}
+
+.popover-item-image {
+  padding: 0;
+  margin: 0;
+  margin-right: 23px;
+}
+
+.popover-cart-total {
+  width: 280px;
+  line-height: 20px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.popover-cart-total-list {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  column-gap: 10px;
+}
+
+.popover-cart-total-title {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  display: flex;
+}
+
+.popover-cart-total-title.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+}
+
+.popover-open-cart-button {
+  font-size: 16px;
+  display: block;
+  margin: 0;
+  width: 280px;
+  padding: 14px 25px;
 }
 
 .navigation-user-link:hover,
@@ -265,13 +414,37 @@ input::placeholder {
   opacity: 0.3;
 }
 
-.navigation-user-link:focus {
+.navigation-user-link:focus,
+.basket-button:focus {
   outline: none;
 }
 
-.navigation-user-link:focus-visible {
+.navigation-user-link:focus-visible,
+.basket-button:focus-visible {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
+}
+
+.basket-container:hover .popover {
+  display: block;
+}
+
+.basket-container:active .popover {
+  display: block;
+}
+
+.basket-container:focus-within .popover {
+  display: block;
+}
+
+.basket-button:focus-within ~ .popover,
+.basket-container:hover .popover {
+  display: block;
+}
+
+.basket-button:focus-within ~ .popover,
+.basket-container:active .popover {
+  display: block;
 }
 
 .navigation-list {
@@ -382,6 +555,8 @@ input::placeholder {
 
 .navigation-list,
 .list,
+.popover-list,
+.popover-cart-total-list,
 .navigation-sublist,
 .slider,
 .slider-pagination-list,
@@ -437,7 +612,7 @@ input::placeholder {
   margin-left: -60px;
   padding-left: 60px;
   padding-top: 14px;
-  z-index: 150;
+  z-index: 15;
 }
 
 .navigation-item:active .navigation-sublist {
@@ -447,7 +622,7 @@ input::placeholder {
   margin-left: -60px;
   padding-left: 60px;
   padding-top: 14px;
-  z-index: 150;
+  z-index: 15;
 }
 
 .navigation-item:focus .navigation-sublist {
@@ -457,7 +632,7 @@ input::placeholder {
   margin-left: -60px;
   padding-left: 60px;
   padding-top: 14px;
-  z-index: 150;
+  z-index: 15;
 }
 
 .navigation-item:focus-within .navigation-sublist {
@@ -467,7 +642,7 @@ input::placeholder {
   margin-left: -60px;
   padding-left: 60px;
   padding-top: 14px;
-  z-index: 150;
+  z-index: 15;
 }
 
 .navigation-link:focus,
@@ -496,21 +671,6 @@ input::placeholder {
 .main-index {
   color: #000000;
   background-color: #ffffff;
-}
-
-.button {
-  display: inline-block;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  text-align: center;
-  color: #000000;
-  background-color: #ffffff;
-  text-decoration: none;
-  line-height: normal;
-  text-transform: uppercase;
-  letter-spacing: 3.6px;
-  cursor: pointer;
-  user-select: none;
 }
 
 /*  SLIDER */
@@ -1717,8 +1877,13 @@ input::placeholder {
   margin-top: -2px;
 }
 
-.catalog-filter-item {
-  margin-top: 17px;
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 17px;
 }
 
 .range-scale {
@@ -1805,6 +1970,7 @@ input::placeholder {
   position: relative;
   display: block;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -1844,10 +2010,12 @@ input::placeholder {
   border: 2px solid #000000;
 }
 
+.control:hover,
 .control:hover .control-mark {
   opacity: 0.6;
 }
 
+.control:active,
 .control:active .control-mark {
   opacity: 0.3;
 }
@@ -1856,11 +2024,13 @@ input::placeholder {
   opacity: 0.1;
 }
 
-.control-input:focus .control-mark {
+.control-input:focus,
+.control-input:focus + .control-mark {
   outline: none;
 }
 
-.control-input:focus-visible .control-mark {
+.control-input:focus-visible,
+.control-input:focus-visible + .control-mark {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }
