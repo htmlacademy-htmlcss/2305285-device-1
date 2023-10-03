@@ -490,13 +490,63 @@
       </div>
     </footer>
 
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
       <div class="modal modal-order">
         <button tybe="button" class="modal-close-button">
           <span class="visually-hidden">Закрыть окно</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Доставка под заказ</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group field-form-name">
+              <label class="form-label" for="field-name">Ваше имя:</label>
+              <input class="form-input user-icon" type="text" id="field-name" name="field-name"
+                placeholder="Введите имя">
+            </p>
+            <p class="field-group field-form-email">
+              <label class="form-label" for="field-email">Ваш e-mail:</label>
+              <input class="form-input email-icon" type="email" id="field-email" name="field-email"
+                placeholder="Введите e-mail">
+              <span class="modal-email-description">Забавный у вас адрес</span>
+            </p>
+            <p class="field-group field-form-order">
+              <label class="form-label" for="field-order">Что нужно привезти:</label>
+              <input class="form-input" type="text" id="field-order" name="field-order" placeholder="В свободной форме">
+            </p>
+            <p class="field-group field-form-number">
+              <label class="form-label form-number-info" for="field-number">Количество:
+                <span class="tooltip">
+                  <button class="tooltip-button" tybe="button">
+                    <svg class="tooltip-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="2" height="12" fill="#000000" viewBox="0 0 2 12">
+                      <g fill="#000" clip-path="url(#a)">
+                        <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" />
+                      </g>
+                      <defs>
+                        <clipPath id="a">
+                          <path fill="#fff" d="M0 0h2v12H0z" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                    к провозу багажа.</span>
+                </span>
+
+
+              </label>
+              <span class="number-container">
+                <button class="field-form-number-button button number-less" tybe="button"><span
+                    class="visually-hidden">Меньше</span></button>
+                <input class="form-input form-number" type="number" step="1" min="1" name="field-number"
+                  placeholder="1">
+                <button class="field-form-number-button button number-more" tybe="button"><span
+                    class="visually-hidden">Больше</span></button>
+              </span>
+            </p>
+            <button class="modal-form-button button" tybe="submit">Отправить</button>
+          </form>
+
         </section>
       </div>
     </div>
