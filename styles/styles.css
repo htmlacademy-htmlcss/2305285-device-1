@@ -1985,6 +1985,11 @@ input::placeholder {
   display: block;
 }
 
+.tooltip-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
+}
+
 .field-form-number-button {
   display: block;
   margin: 0;
