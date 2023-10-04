@@ -209,6 +209,7 @@ input::placeholder {
 
 .search-button:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .profile-container {
@@ -457,6 +458,7 @@ input::placeholder {
 
 .popover-open-cart-button:disabled span {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .navigation-user-link:hover,
@@ -787,8 +789,9 @@ input::placeholder {
   outline-offset: 2px;
 }
 
-.slider-button:hover:disabled {
+.slider-button:disabled {
   opacity: 0.1;
+  ppointer-events: none;
 }
 
 .slider-container {
@@ -883,8 +886,9 @@ input::placeholder {
   outline: 2px solid #AF4FFF;
 }
 
-.more-detailed:hover:disabled {
+.more-detailed:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .slider-description h3 {
@@ -968,8 +972,9 @@ input::placeholder {
   outline-offset: 2px;
 }
 
-.slider-pagination-button:hover:disabled {
+.slider-pagination-button:disabled {
   opacity: 0.1;
+  pointer-events: none;
 }
 
 /* CATALOG */
@@ -1352,8 +1357,9 @@ input::placeholder {
   outline: 2px solid #AF4FFF;
 }
 
-.about-button:hover:disabled {
+.about-button:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 /* CONTACTS */
@@ -1449,8 +1455,9 @@ input::placeholder {
   outline: 2px solid #AF4FFF;
 }
 
-.contacts-button:hover:disabled {
+.contacts-button:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 /* NEWSLATTER */
@@ -1943,6 +1950,10 @@ input::placeholder {
   background-color: #FFE17F;
 }
 
+.tooltip-button::after {
+  content: url(../images/inform.svg);
+}
+
 .tooltip {
   position: absolute;
   width: 20px;
@@ -2087,6 +2098,7 @@ input::-webkit-inner-spin-button {
 
 .form-input:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .modal-form-button {
@@ -2128,8 +2140,9 @@ input::-webkit-inner-spin-button {
   outline: 2px solid #AF4FFF;
 }
 
-.modal-form-button:hover:disabled {
+.modal-form-button:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 /* КАТАЛОГ */
@@ -2416,6 +2429,7 @@ input::-webkit-inner-spin-button {
 
 .control-input:disabled + .control-mark {
   opacity: 0.1;
+  pointer-events: none;
 }
 
 .control-input:focus,
@@ -2469,8 +2483,9 @@ input::-webkit-inner-spin-button {
   outline: 2px solid #AF4FFF;
 }
 
-.button-show:hover:disabled {
+.button-show:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .button-sort-container {
@@ -2558,6 +2573,7 @@ input::-webkit-inner-spin-button {
 
 .select-control:disabled {
   opacity: 0.1;
+  pointer-events: none;
 }
 
 .product-container {
@@ -2717,6 +2733,10 @@ input::-webkit-inner-spin-button {
   outline-offset: 2px;
 }
 
+.product-card-link:focus-visible ~ .button-show-product {
+  display: none;
+}
+
 .button-show-more {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -2749,8 +2769,9 @@ input::-webkit-inner-spin-button {
   outline-offset: 2px;
 }
 
-.button-show-more:hover:disabled {
+.button-show-more:disabled {
   opacity: 0.3;
+  pointer-events: none;
 }
 
 .pagination-container {
