@@ -739,8 +739,14 @@ input::placeholder {
 .gallery-products {
   display: block;
   background: #ffffff;
-  background: linear-gradient(to bottom, #FFE17F 0%, #FFE17F 150px, #ffffff 150px, #ffffff 100%);
+  background: linear-gradient(to bottom, #FFE17F 0%, #FFE17F 135px, #ffffff 135px, #ffffff 100%);
   position: relative;
+  width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.slider-imagion {
   margin-top: -16px;
 }
 
@@ -749,7 +755,7 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 211px;
+  top: 195px;
   left: 30px;
 }
 
@@ -796,13 +802,7 @@ input::placeholder {
 
 .slider-button:disabled {
   opacity: 0.1;
-  ppointer-events: none;
-}
-
-.slider-container {
-  width: 1160px;
-  margin: 0 auto;
-  margin-bottom: 70px;
+  pointer-events: none;
 }
 
 .slider {
@@ -830,7 +830,7 @@ input::placeholder {
   text-align: right;
   color: #FFFFFF;
   position: absolute;
-  top: 29px;
+  top: 15px;
   right: 49px;
   margin: 0;
   z-index: -1;
@@ -849,7 +849,7 @@ input::placeholder {
 
 .slider-description {
   width: 560px;
-  padding-top: 121px;
+  padding-top: 105px;
 }
 
 .more-detailed {
@@ -935,9 +935,11 @@ input::placeholder {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: auto;
   border: 0;
-  margin-top: -20px;
+  position: absolute;
+  bottom: 10px;
+  left: 542px;
 }
 
 .slider-pagination-item {
@@ -986,7 +988,7 @@ input::placeholder {
 
 .catalog {
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 85px;
 }
 
 .catalog-button {
@@ -1028,6 +1030,7 @@ input::placeholder {
 .catalog-description {
   font-size: 18px;
   margin: 0;
+  letter-spacing: -0.36px;
 }
 
 .catalog-container {
@@ -1041,13 +1044,17 @@ input::placeholder {
   margin-bottom: 32px;
 }
 
+.catalog-container-monopod {
+  align-items: end;
+}
+
 /* ADVANTAGES */
 
 .advantages {
   background: #ffffff;
   background: linear-gradient(to bottom, #ffffff 0%, #ffffff 102px, #F0F0F0 102px, #F0F0F0 100%);
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 75px;
 }
 
 .advantages-delivery {
@@ -1069,6 +1076,7 @@ input::placeholder {
 }
 
 .advantages-item h3 {
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin: 0;
@@ -1082,6 +1090,17 @@ input::placeholder {
   padding-bottom: 72px;
 }
 
+.advantages-button-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 287px;
+  margin-right: 116px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  border-right: 7px solid #000;
+}
+
 .advantages-button-item {
   width: 280px;
   margin-bottom: 35px;
@@ -1092,21 +1111,10 @@ input::placeholder {
   margin-bottom: 0;
 }
 
-.advantages-button-list {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 280px;
-  margin-right: 116px;
-  padding-top: 64px;
-  padding-bottom: 64px;
-  border-right: 7px solid #000;
-}
-
 .advantages-button {
   border: 0;
   width: 160px;
-  padding: 10px 4px;
+  padding: 9px 4px;
   background-color: transparent;
   text-align: center;
   position: relative;
@@ -1129,7 +1137,6 @@ input::placeholder {
 
 .advantages-button-item:first-child .advantages-button,
 .advantages-button-item:first-child .advantages-button::before {
-  padding-left: 27px;
   width: 280px;
   background-color: #000000;
   color: #FFE17F;
@@ -1294,6 +1301,29 @@ input::placeholder {
   padding-top: 47px;
   grid-template-columns: 520px 1fr;
   gap: 50px 108px;
+  position: relative;
+}
+
+.about-contacts::before {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-contacts::after {
+  content: "";
+  display: block;
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 628px;
 }
 
 .about p {
@@ -1312,16 +1342,30 @@ input::placeholder {
 .delivery-list {
   font-weight: 700;
   line-height: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .delivery-item {
-  padding-bottom: 19px;
-  padding-left: 34px;
+  padding-bottom: 17px;
+  padding-left: 38px;
+  position: relative;
+  letter-spacing: -0.36px;
 }
 
 .delivery-item:last-child {
   padding-bottom: 0;
+}
+
+.delivery-item::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FFC700;
+  position: absolute;
+  top: 6px;
+  left: 4px;
 }
 
 .about-button {
