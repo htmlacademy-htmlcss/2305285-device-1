@@ -222,6 +222,7 @@ input::placeholder {
 
 .profile-exit {
   opacity: 0.3;
+  padding-left: 5px;
 }
 
 .tools-container {
@@ -2223,7 +2224,7 @@ input::-webkit-inner-spin-button {
 .inner-header {
   width: 1160px;
   margin: 0 auto 34px auto;
-  padding-top: 34px;
+  padding-top: 36px;
 }
 
 .breadcrumbs-container {
@@ -2233,6 +2234,7 @@ input::-webkit-inner-spin-button {
 }
 
 .inner-header-title {
+  font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
   margin: 0;
@@ -2337,6 +2339,7 @@ input::-webkit-inner-spin-button {
   padding-top: 12px;
   position: relative;
   margin-bottom: 20px;
+  letter-spacing: -0.36px;
 }
 
 .catalog-filter-title::before {
@@ -2357,6 +2360,14 @@ input::-webkit-inner-spin-button {
 
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 17px;
+}
+
+.catalog-filter-item-radio:last-child {
+  padding-top: 5px;
+}
+
+.range {
+  padding-top: 6px;
 }
 
 .range-scale {
@@ -2414,17 +2425,18 @@ input::-webkit-inner-spin-button {
   display: flex;
   width: 170px;
   justify-content: space-between;
+  padding-top: 2px;
 }
 
 .catalog-filter-label {
   display: flex;
   margin-left: -14px;
-  font: inherit;
+  font-size: 14px;
   opacity: 0.3;
 }
 
 .range-input {
-  width: 70px;
+  width: 63px;
   padding: 0 4px;
   font: inherit;
   text-align: left;
@@ -2468,7 +2480,6 @@ input::-webkit-inner-spin-button {
   border: 2px solid #000000;
   position: absolute;
 }
-
 
 .control-input[type="radio"] + .control-mark {
   appearance: none;
@@ -2669,6 +2680,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
   padding: 0;
   width: 226px;
+  letter-spacing: -0.36px;
 }
 
 .product-card-price {
@@ -2676,7 +2688,7 @@ input::-webkit-inner-spin-button {
   color: #444444;
   background-color: #FFFFFF;
   font-weight: 400;
-  align-items: start;
+  text-align: right;
 }
 
 .product-list {
@@ -2812,7 +2824,7 @@ input::-webkit-inner-spin-button {
   color: #000000;
   background-color: #FFFFFF;
   width: 760px;
-  padding: 18px 39px;
+  padding: 16px 39px;
   border: 3px solid #E5E5E5;
   margin-bottom: 44px;
 }
@@ -2885,9 +2897,9 @@ input::-webkit-inner-spin-button {
   text-transform: uppercase;
   text-decoration: none;
   justify-content: center;
-  align-items: center;
   padding: 25px;
   opacity: 1;
+  letter-spacing: 3.6px;
 }
 
 .pagination-disabled {
