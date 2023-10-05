@@ -1519,7 +1519,7 @@ input::placeholder {
 
 .newslatter-form-container {
   width: 1160px;
-  padding-top: 64px;
+  padding-top: 62px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 348px 1fr;
@@ -1532,11 +1532,13 @@ input::placeholder {
   line-height: 50px;
   max-width: 348px;
   margin: 0;
+  padding-left: 5px;
 }
 
 .newslatter-description {
   margin: 0;
   padding-top: 10px;
+  padding-left: 5px;
 }
 
 .newslatter-form {
@@ -1549,7 +1551,7 @@ input::placeholder {
   font-size: 18px;
   margin: 0;
   padding: 0;
-  width: 545px;
+  width: 560px;
   border: 0;
   background-color: #F0F0F0;
   border-bottom: 3px solid #C4C4C4;
@@ -1562,7 +1564,7 @@ input::placeholder {
   background-color: #F0F0F0;
   font-size: 18px;
   margin: 0;
-  padding: 15px 39px;
+  padding: 15px 33px;
   border: 3px solid #C4C4C4;
 }
 
@@ -1637,7 +1639,7 @@ input::placeholder {
 .footer-logo-container {
   display: flex;
   width: 100%;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .footer-logo-link[href]:hover {
@@ -1659,6 +1661,18 @@ input::placeholder {
 
 .footer-contacts {
   width: 239px;
+  position: relative;
+}
+
+.footer-contacts::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+  position: absolute;
+  bottom: 32px;
+  left: 0;
 }
 
 .footer-contacts-text {
@@ -1666,7 +1680,8 @@ input::placeholder {
 }
 
 .footer-navigation-social-container {
-  width: 460px;
+  width: 510px;
+  position: relative;
 }
 
 .footer-navigation {
@@ -1674,17 +1689,18 @@ input::placeholder {
 }
 
 .footer-navigation-list {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
   letter-spacing: 3.6px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  gap: 35px;
+  gap: 30px;
+  padding-top: 4px;
 }
 
 .footer-navigation-link {
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
   color: #FFFFFF;
   background-color: #444444;
   text-decoration: none;
@@ -1723,8 +1739,9 @@ input::placeholder {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
+  margin-left: 150px;
 }
 
 .footer-social-item {
@@ -1786,6 +1803,7 @@ input::placeholder {
 
 .footer-number-htmlacademy {
   width: 175px;
+  padding-top: 5px;
 }
 
 .footer-number {
@@ -2136,8 +2154,7 @@ input::-webkit-inner-spin-button {
   outline-offset: 2px;
 }
 
-.form-input:invalid,
-.number-container:invalid {
+.form-input:invalid {
   outline: 2px solid #FF3D3D;
 }
 
