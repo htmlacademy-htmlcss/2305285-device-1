@@ -15,7 +15,6 @@
           <img src="images/logo-header.svg" alt="Логотип сайта device" width="145" height="36">
         </a>
         <div class="navigation-user-container">
-
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <input class="navigation-field" type="text" name="search" placeholder="Поиск по сайту">
             <button class="search-button" type="submit"><span>Найти</span></button>
@@ -28,10 +27,9 @@
             <a class="navigation-user-link compare" href="#">Сравнить</a>
           </div>
           <div class="basket-container">
-            <button class="basket-button basket" type="button">
-              <p class="basket-button-description">Корзина</p>
-            </button>
-            <div class="popover popover-cart popover-open ">
+            <a class="navigation-user-link basket-button basket" href="#">Корзина</a>
+            <!-- Для открытия поповера добавить класс popover-open -->
+            <div class="popover popover-cart">
               <div class="popover-content">
                 <h2 class="popover-title visually-hidden">Корзина</h2>
                 <ul class="popover-list">
@@ -60,7 +58,7 @@
                       <h3 class="popover-cart-total-title">Товаров: 2</h3>
                     </li>
                     <li class="popover-cart-total-item">
-                      <h3 class="popover-cart-total-title right">Cумма: 2000 ₽</h3>
+                      <h3 class="popover-cart-total-title right">Cумма: 2000&nbsp;₽</h3>
                     </li>
                   </ol>
                 </div>
@@ -75,11 +73,11 @@
         <div class="navigation-list-container">
           <ul class="navigation-list">
             <li class="navigation-item">
+              <a class="navigation-link" href="#">Каталог товаров</a>
               <button class="navigation-catalog" type="button">
-                <p class="navigation-catalog-description">Каталог товаров</p>
+                <span class="visually-hidden">Открыть меню</span>
               </button>
-
-              <ul class="navigation-sublist is-active">
+              <ul class="navigation-sublist">
                 <li class="navigation-subitem">
                   <ul class="list">
                     <li>
@@ -147,7 +145,8 @@
             </section>
             <section class="slider-description">
               <h3>Порхает как бабочка, жалит как пчела!</h3>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+              <p>Этот обычный, на&nbsp;первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
+                стандартную
                 камеру.</p>
               <a class="more-detailed button" href="#">Подробнее</a>
               <dl class="specification">
@@ -169,7 +168,8 @@
             </section>
             <section class="slider-description">
               <h3>Худеем правильно!</h3>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <p>Мотивирующие фитнес-браслеты помогут найти в&nbsp;себе силы не&nbsp;пропускать занятия и&nbsp;соблюдать
+                диету.</p>
               <a class="more-detailed button" href="#">Подробнее</a>
               <dl class="specification">
                 <div class="specification-item">
@@ -185,9 +185,8 @@
               <img src="images/slider-3.png" alt="Селфи-палка длинная" width="560" height="560">
               <section class="slider-description">
                 <h3>Делай селфи, как Бен Стиллер! </h3>
-                <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и
-                  весом
-                  всего 5 кг.</p>
+                <p>Самая длинная палка для селфи доступна в&nbsp;нашем магазине. Восемь (Восемь, Карл!) метров длиной
+                  и&nbsp;весом сего 5&nbsp;кг.</p>
                 <a class="more-detailed button" href="#">Подробнее</a>
                 <dl class="specification">
                   <div class="specification-item">
@@ -300,24 +299,25 @@
             <li class="advantages-item advantages-delivery">
               <section class="advantages-description">
                 <h3>Доставка</h3>
-                <p>Мы с удовольствием доставим ваш товар прямо <br>к вашему подъезду совершенно
-                  бесплатно! Ведь <br>мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                <p>Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо <br>к&nbsp;вашему подъезду совершенно
+                  бесплатно! Ведь <br>мы&nbsp;неплохо заработаем, поднимая его на&nbsp;ваш этаж.
+                </p>
               </section>
             </li>
 
             <li class="advantages-item advantages-guarantee">
               <section class="advantages-description">
                 <h3>Гарантия</h3>
-                <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-                  переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+                <p>Если из-за возгорания купленного у&nbsp;нас товара у&nbsp;вас сгорит дом&nbsp;&mdash; не
+                  переживайте, мы&nbsp;выдадим вам новый. Товар, не&nbsp;дом, конечно&nbsp;же.</p>
               </section>
             </li>
 
             <li class="advantages-item advantages-credit">
               <section class="advantages-description">
                 <h3>Кредит</h3>
-                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для
-                  вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+                <p>Залезть в&nbsp;долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                  условия кредита. Выгодные для банка, разумеется.</p>
               </section>
             </li>
           </ol>
@@ -344,8 +344,8 @@
       <section class="about-contacts">
         <section class="about">
           <h2>О нас</h2>
-          <p>Огромный выбор гаджетов не оставит равнодушным <br>гика, который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+          <p>Огромный выбор гаджетов не&nbsp;оставит равнодушным <br>гика, который есть в&nbsp;каждом из&nbsp;нас.</p>
+          <p>Мы&nbsp;можем доставить ваш товар в&nbsp;самые отдалённые уголки России транспортными компаниями:</p>
           <ul class="delivery-list">
             <li class="delivery-item">Меловые линии</li>
             <li class="delivery-item">СДИК</li>
@@ -356,18 +356,17 @@
 
         <section class="contacts">
           <h2>Контакты</h2>
-          <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. <br>Заодно сможете проверить
-            работоспособность покупки.
-          </p>
+          <p class="contacts-description">Вы&nbsp;можете забрать товар сами, заехав в&nbsp;наш офис. <br>Заодно сможете
+            проверить работоспособность покупки.</p>
           <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
           <address class="contacts-address">
-            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера&nbsp;П.</p>
             <a class="contacts-number-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
           <h3 class="contacts-subtitle">Время работы</h3>
           <ol class="contacts-schedule">
-            <li class="contacts-schedule-item">пн—пт: с 10:00 до 22:00</li>
-            <li class="contacts-schedule-item">сб—вс: с 10:00 до 19:00</li>
+            <li class="contacts-schedule-item">пн&mdash;пт: с&nbsp;10:00 до&nbsp;22:00</li>
+            <li class="contacts-schedule-item">сб&mdash;вс: с&nbsp;10:00 до&nbsp;19:00</li>
           </ol>
           <a class="contacts-button button" href="#">Напишите нам</a>
         </section>
@@ -377,8 +376,8 @@
         <div class="newslatter-form-container">
           <h2 class="newslatter-title">Подпишитесь на рассылку</h2>
           <div class="newslatter-description-container">
-            <p class="newslatter-description">Еженедельный дайджест с обзорами новинок, <br>длительными тест-драйвами,
-              распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            <p class="newslatter-description">Еженедельный дайджест с&nbsp;обзорами новинок, <br>длительными
+              тест-драйвами, распаковками, а&nbsp;также акции, спецпредложения и&nbsp;вот это вот всё.</p>
           </div>
           <form class="newslatter-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="newslatter-field" type="email" name="newslatter-email" placeholder="Ваш e-mail">
@@ -399,7 +398,7 @@
         <section class="footer-contacts">
           <h2 class="visually-hidden">Адрес</h2>
 
-          <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера&nbsp;П.</p>
         </section>
         <div class="footer-navigation-social-container">
           <section class="footer-navigation">
@@ -506,7 +505,7 @@
               <label class="form-label" for="field-email">Ваш e-mail:</label>
               <input class="form-input email-icon" type="email" id="field-email" name="field-email"
                 placeholder="Введите e-mail" required>
-              <span class="modal-email-description">Забавный у вас адрес</span>
+              <span class="modal-email-description">Забавный у&nbsp;вас адрес</span>
             </p>
             <p class="field-group field-form-order">
               <label class="form-label" for="field-order">Что нужно привезти:</label>
@@ -517,7 +516,7 @@
                 <span class="tooltip">
                   <button class="tooltip-button" tybe="button" aria-labelledby="tooltip-label-number"></button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-number">Постараемся найти, сколько нужно.
-                    Привезём сколько получится по требованиям к провозу багажа.</span>
+                    Привезём сколько получится по&nbsp;требованиям к&nbsp;провозу багажа.</span>
                 </span>
               </label>
               <span class="number-container">
@@ -534,6 +533,8 @@
         </section>
       </div>
     </div>
+
+    <script src="./js/scripts.js"></script>
   </body>
 
 </html>

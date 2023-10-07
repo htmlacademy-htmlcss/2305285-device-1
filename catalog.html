@@ -15,12 +15,10 @@
           <img src="images/logo-header.svg" alt="Логотип сайта device" width="145" height="36">
         </a>
         <div class="navigation-user-container">
-
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <input class="navigation-field" type="text" name="search" placeholder="Поиск по сайту">
             <button class="search-button" type="submit"><span>Найти</span></button>
           </form>
-
           <div class="profile-container">
             <a class="navigation-user-link active-profile login" href="#">Коля Петухов</a>
             <a class="navigation-user-link active-profile profile-exit" href="#">Выйти</a>
@@ -29,10 +27,9 @@
             <a class="navigation-user-link compare" href="#">Сравнить</a>
           </div>
           <div class="basket-container">
-            <button class="basket-button basket" type="button">
-              <p class="basket-button-description">Корзина</p>
-            </button>
-            <div class="popover popover-cart popover-open ">
+            <a class="navigation-user-link basket-button basket" href="#">Корзина</a>
+            <!-- Для открытия поповера добавить класс popover-open -->
+            <div class="popover popover-cart">
               <div class="popover-content">
                 <h2 class="popover-title visually-hidden">Корзина</h2>
                 <ul class="popover-list">
@@ -242,10 +239,10 @@
               </select>
               <div class="button-sort-container">
                 <a href="#" class="button-sort more">
-                  <span class="visually-hidden">От меньшего к большему</span>
+                  <span class="visually-hidden">От&nbsp;меньшего к&nbsp;большему</span>
                 </a>
                 <a href="#" class="button-sort less">
-                  <span class="visually-hidden">От большего к меньшему</span>
+                  <span class="visually-hidden">От&nbsp;большего к&nbsp;меньшему</span>
                 </a>
               </div>
             </div>
@@ -258,7 +255,7 @@
                     <img class="product-card-image" src="images/product-1.jpg" alt="" width="360" height="380">
                     <div class="product-card-title-container">
                       <h3 class="product-card-title">Любительская <br>селфи-палка</h3>
-                      <b class="product-card-price">500 ₽</b>
+                      <b class="product-card-price">500&nbsp;₽</b>
                     </div>
                   </a>
                   <a class="button button-show-product" href="#">Подробнее</a>
@@ -270,7 +267,7 @@
                     <img class="product-card-image" src="images/product-2.jpg" alt="" width="360" height="380">
                     <div class="product-card-title-container">
                       <h3 class="product-card-title">Профессиональная селфи-палка</h3>
-                      <b class="product-card-price">1500 ₽</b>
+                      <b class="product-card-price">1&nbsp;500&nbsp;₽</b>
                     </div>
                   </a>
                   <a class="button button-show-product" href="#">Подробнее</a>
@@ -282,7 +279,7 @@
                     <img class="product-card-image" src="images/product-3.jpg" alt="" width="360" height="380">
                     <div class="product-card-title-container">
                       <h3 class="product-card-title">Непотопляемая <br>селфи-палка</h3>
-                      <b class="product-card-price">2500 ₽</b>
+                      <b class="product-card-price">2&nbsp;500&nbsp;₽</b>
                     </div>
                   </a>
                   <a class="button button-show-product" href="#">Подробнее</a>
@@ -293,8 +290,8 @@
                   <a class="product-card-link" href="#">
                     <img class="product-card-image" src="images/product-4.jpg" alt="" width="360" height="380">
                     <div class="product-card-title-container">
-                      <h3 class="product-card-title">Селфи-палка «Следуй <br>за мной»</h3>
-                      <b class="product-card-price">1500 ₽</b>
+                      <h3 class="product-card-title">Селфи-палка &laquo;Следуй <br>за&nbsp;мной&raquo;</h3>
+                      <b class="product-card-price">1&nbsp;500&nbsp;₽</b>
                     </div>
                   </a>
                   <a class="button button-show-product" href="#">Подробнее</a>
@@ -339,7 +336,7 @@
         <section class="footer-contacts">
           <h2 class="visually-hidden">Адрес</h2>
 
-          <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+          <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, 5, литера&nbsp;П.</p>
         </section>
         <div class="footer-navigation-social-container">
           <section class="footer-navigation">
