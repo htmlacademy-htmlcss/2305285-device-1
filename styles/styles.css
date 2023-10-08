@@ -1162,6 +1162,8 @@ input::placeholder {
   cursor: pointer;
   position: relative;
   user-select: none;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .delivery-icon-inform {
