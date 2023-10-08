@@ -53,6 +53,7 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -70,6 +71,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 3.6px;
   cursor: pointer;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -688,7 +690,7 @@ input::placeholder {
   z-index: 20;
 }
 
-.slider-imagion {
+.slider-image {
   margin-top: -16px;
 }
 
@@ -784,7 +786,7 @@ input::placeholder {
   justify-content: space-between;
 }
 
-.slider-imagion {
+.slider-image {
   display: block;
   width: 560px;
   object-fit: contain;
@@ -1161,6 +1163,7 @@ input::placeholder {
   letter-spacing: 4px;
   cursor: pointer;
   position: relative;
+  -webkit-user-select: none;
   user-select: none;
   padding-left: 150px;
   padding-right: 150px;
@@ -2019,6 +2022,7 @@ input::placeholder {
 }
 
 .form-number {
+  -webkit-appearance: none;
   appearance: none;
   width: 60px;
   height: 60px;
@@ -2150,7 +2154,7 @@ input::-webkit-inner-spin-button {
   pointer-events: none;
 }
 
-/* КАТАЛОГ */
+/* CATALOG */
 
 .main-inner {
   font-size: 16px;
@@ -2381,11 +2385,13 @@ input::-webkit-inner-spin-button {
   text-align: left;
   background-color: transparent;
   border: none;
+  -webkit-appearance: textfield;
   appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -2404,6 +2410,7 @@ input::-webkit-inner-spin-button {
   left: 0;
   width: 20px;
   height: 20px;
+  -webkit-appearance: none;
   appearance: none;
   border: 2px solid #CCCCCC;
   border-radius: 3px;
@@ -2421,6 +2428,7 @@ input::-webkit-inner-spin-button {
 }
 
 .control-input[type="radio"] + .control-mark {
+  -webkit-appearance: none;
   appearance: none;
   border: 2px solid #CCCCCC;
   border-radius: 50%;
@@ -2798,6 +2806,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: space-between;
   width: 760px;
+  -webkit-user-select: none;
   user-select: none;
 }
 
