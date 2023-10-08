@@ -1815,6 +1815,8 @@ input::placeholder {
   z-index: 100;
 }
 
+/* Для активации модального окна переключить на display: block; */
+
 .modal-container-close {
   display: none;
 }
