@@ -37,7 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  min-width: 1440px;
+  min-width: 1260px;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -1821,7 +1821,8 @@ input::placeholder {
   z-index: 100;
 }
 
-/* Для активации модального окна переключить на display: block; */
+/* Для активации модального окна переключить на "display: block;"
+или нажать на кнопку "Доставим редкий товар под заказ */
 
 .modal-container-close {
   display: none;
@@ -1874,6 +1875,23 @@ input::placeholder {
   background-image: url("../images/close.svg");
   background-repeat: repeat;
   background-position: center;
+}
+
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-close-button:focus {
+  outline: none;
+}
+
+.modal-close-button:focus-visible::before {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .modal-form {
@@ -2092,12 +2110,6 @@ input::-webkit-inner-spin-button {
   outline: none;
 }
 
-.form-input:focus-visible:not(:focus),
-.field-form-number-button:focus-visible {
-  outline: 2px solid #AF4FFF;
-  outline-offset: 2px;
-}
-
 .form-input:invalid {
   outline: 2px solid #FF3D3D;
 }
@@ -2109,6 +2121,12 @@ input::-webkit-inner-spin-button {
 .form-input:disabled {
   opacity: 0.3;
   pointer-events: none;
+}
+
+.form-input:focus-within,
+.field-form-number-button:focus-visible {
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 .modal-form-button {
@@ -2592,7 +2610,7 @@ input::-webkit-inner-spin-button {
   outline: none;
 }
 
-.select-control:focus-visible:not(:focus) {
+.select-control:focus-within {
   outline: 2px solid #AF4FFF;
   outline-offset: 2px;
 }

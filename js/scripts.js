@@ -12,3 +12,18 @@ cartBtn.addEventListener('click', (e) => {
   e.preventDefault();
   cartPopover.classList.toggle('popover-open');
 })
+
+
+const modal = document.querySelector('.modal-container');
+const modalBtn = document.querySelector('.delivery-service-button');
+
+if (modal) {
+  modalBtn.addEventListener('click', () => {
+    modal.classList.remove('modal-container-close');
+    modal.querySelector('input').focus();
+  })
+
+  modal.querySelector('.modal-close-button').addEventListener('click', () => {
+    modal.classList.add('modal-container-close');
+  })
+}
